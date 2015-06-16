@@ -5,33 +5,33 @@ subtitle: Innovation is now an empty signifier
 ---
 <br/>
 <br/>
-<section class="col-lg-9 col-md-9 col-sm-9 col-xs-12 lefty">
+<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 lefty">
 	<h2 class="left fix-alignment">BUXHETI I HAPUR <span class="gray"> ______________</span></h2>
 	<br/>
-	<article class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-	<p class="normal"><span>Titulli:</span> Buxheti i hapur</p>
-	<p class="normal"><span>Përshkrimi:</span> Vizualizim interaktiv i buxhetit të Republikës së Shqipërisë ndër vite.</p>
-	<p class="normal"><span>Autorët:</span> Grigor Malo, Bruna Rizvanolli, Jona Rizvanolli</p>
-	<p class="normal"><span>Versioni:</span> 1</p>
-	<p class="normal"><span>Data e publikimit:</span> 12.05.2014</p>
-	<p class="normal"><span>Gjuhët:</span> Processing, Processing.js, Php, MySQL</p>
-	<p class="normal"><span>Projekti:</span> <a href="http://tablo-al.com/buxheti-i-hapur/" target="_blank">Ndiq linkun</a></p>
-	<p class="normal"><span>Kodi burim:</span> <a href="https://github.com/GrigorM/Buxheti-i-hapur--Open-budget" target="_blank">Ndiq linkun<i class="fa fa-github fac"></i></a></p>
-	<hr>
-	<p class="normal"><span>Në vazhdim:</span> Rikonceptim i aplikacionit me d3.js</p>
-	<p class="normal">...</p>
+	<article class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+		<p class="normal"><span>Titulli:</span> Buxheti i hapur</p>
+		<p class="normal"><span>Përshkrimi:</span> Vizualizim interaktiv i buxhetit të Republikës së Shqipërisë ndër vite.</p>
+		<p class="normal"><span>Autorët:</span> Grigor Malo, Bruna Rizvanolli, Jona Rizvanolli</p>
+		<p class="normal"><span>Versioni:</span> 1</p>
+		<p class="normal"><span>Data e publikimit:</span> 12.05.2014</p>
+		<p class="normal"><span>Gjuhët:</span> Processing, Processing.js, Php, MySQL</p>
+		<p class="normal"><span>Projekti:</span> <a href="http://tablo-al.com/buxheti-i-hapur/" target="_blank">Ndiq linkun</a></p>
+		<p class="normal"><span>Kodi burim:</span> <a href="https://github.com/GrigorM/Buxheti-i-hapur--Open-budget" target="_blank">Ndiq linkun<i class="fa fa-github fac"></i></a></p>
+		<hr>
+		<p class="normal"><span>Në vazhdim:</span> Rikonceptim i aplikacionit me d3.js</p>
+		<p class="normal">...</p>
 	</article>
-
-	<figure class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+	<figure class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 		<img class="fit-image" alt="Buxheti i hapur, screenshot" src='/reclaim/img/portfolio/buxheti-i-hapur/buxhetihapur.png'>
 		<figcaption></figcaption>
 	</figure>
+	<aside class="col-lg-3 col-lg-offset-1 col-md-4 col-sm-6 col-xs-12 category-sidebar">
+		<h2 class="aside-header">Postime rreth projektit</h2>
+		<ul>
+		{% for post in site.categories.buxheti %}
+			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+		{% endfor %}
+		</ul>
+	</aside>	
 </section>
-<aside class="col-lg-3 col-md-3 col-sm-3 col-xs-12 category-sidebar">
-<h2>Postime rreth projektit</h2>
-<ul>
-{% for post in site.categories.buxheti %}
-	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
-</aside>
+

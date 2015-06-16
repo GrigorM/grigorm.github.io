@@ -5,29 +5,29 @@ subtitle: Innovation is now an empty signifier
 ---
 <br/>
 <br/>
-<section class="col-lg-9 col-md-9 col-sm-9 col-xs-12 lefty">
+<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 lefty">
 	<h2 class="left fix-alignment">NOISE GENERATOR <span class="gray"> ______________</span></h2>
 	<br/>
-	<article class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-	<p class="normal"><span>Titulli:</span> Noise Generator</p>
-	<p class="normal"><span>Përshkrimi:</span> Aplikacion eksperimental për procesim imazhi.</p>
-	<p class="normal"><span>Autori:</span> Grigor Malo</p>
-	<p class="normal"><span>Versioni:</span> 1</p>
-	<p class="normal"><span>Data e publikimit:</span> 15.03.2014</p>
-	<p class="normal"><span>Gjuhët:</span> Processing</p>
-	<p class="normal"><span>Kodi burim:</span> <a href="https://github.com/GrigorM/noisegenerator" target="_blank">Ndiq linkun<i class="fa fa-github fac"></i></a></p>	
-	<hr>
-	<p class="normal"><span>Në vazhdim:</span> Ndërtimi i një versioni web me p5.js</p>
-	<p class="normal">...</p>	
+	<article class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+		<p class="normal"><span>Titulli:</span> Noise Generator</p>
+		<p class="normal"><span>Përshkrimi:</span> Aplikacion eksperimental për procesim imazhi.</p>
+		<p class="normal"><span>Autori:</span> Grigor Malo</p>
+		<p class="normal"><span>Versioni:</span> 1</p>
+		<p class="normal"><span>Data e publikimit:</span> 15.03.2014</p>
+		<p class="normal"><span>Gjuhët:</span> Processing</p>
+		<p class="normal"><span>Kodi burim:</span> <a href="https://github.com/GrigorM/noisegenerator" target="_blank">Ndiq linkun<i class="fa fa-github fac"></i></a></p>	
+		<hr>
+		<p class="normal"><span>Në vazhdim:</span> Ndërtimi i një versioni web me p5.js</p>
+		<p class="normal">...</p>	
 	</article>
-	<figure class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-		<img class="fit-image" alt="Noise generator, experimental photoediting application" src='/reclaim/img/portfolio/noisegen/noisegen.png'>
+	<figure class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+		<img class="fit-image" alt="Noise generator, experimental photoediting application" src='/img/portfolio/noisegen/noisegen.png'>
 		<figcaption></figcaption>
 	</figure>	
+	<aside class="col-lg-3 col-lg-offset-1 col-md-4 col-sm-6 col-xs-12 category-sidebar">
+		<h2 class="aside-header">Postime rreth projektit</h2>
+		{% for post in site.categories.image_processing %}
+			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+		{% endfor %}
+	</aside>	
 </section>
-<aside class="col-lg-3 col-md-3 col-sm-3 col-xs-12 category-sidebar">
-<h2>Postime rreth projektit</h2>
-{% for post in site.categories.image_processing %}
-	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</aside>
