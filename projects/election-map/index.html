@@ -5,23 +5,27 @@ subtitle: Innovation is now an empty signifier
 ---
 <br/>
 <br/>
-<section class="col-lg-9 col-md-9 col-sm-9 col-xs-12 lefty">
+<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 lefty">
 	<h2 class="left fix-alignment">HARTA ZGJEDHORE <span class="gray"> ______________</span></h2>
 	<br/>
-	<article class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-	<p class="normal"><span>Titulli:</span> Harta zgjedhore, lokale 2015</p>
-	<p class="normal"><span>Përshkrimi:</span> Hartë interaktive me rezultatet e zgjedhjeve lokale 2015.</p>
-	<p class="normal"><span>Autori:</span> Grigor Malo</p>
-	<p class="normal"><span>Versioni:</span> 1</p>
-	<p class="normal"><span>Data e publikimit:</span> 21.06.2015</p>
-	<p class="normal"><span>Gjuhët:</span> Cartodb.js, d3.js</p>
-	<p class="normal"><span>Projekti:</span> <a href="http://grigorm.github.io/lokalet2015" target="_blank">Ndiq linkun</a></p>
-	<p class="normal"><span>Kodi burim:</span> <a href="#" target="_blank">Ndiq linkun<i class="fa fa-github fac"></i></a></p>		
+	<article class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+		<p class="normal"><span>Titulli:</span> Harta zgjedhore, lokale 2015</p>
+		<p class="normal"><span>Përshkrimi:</span> Hartë interaktive me rezultatet e zgjedhjeve lokale 2015.</p>
+		<p class="normal"><span>Autori:</span> Grigor Malo</p>
+		<p class="normal"><span>Versioni:</span> 1</p>
+		<p class="normal"><span>Data e publikimit:</span> 21.06.2015</p>
+		<p class="normal"><span>Gjuhët:</span> Cartodb.js, d3.js</p>
+		<p class="normal"><span>Projekti:</span> <a href="http://grigorm.github.io/lokalet2015" target="_blank">Ndiq linkun</a></p>
+		<p class="normal"><span>Kodi burim:</span> <a href="#" target="_blank">Ndiq linkun<i class="fa fa-github fac"></i></a></p>		
 	</article>
+	<figure class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+		<img class="fit-image" alt="Harta e zgjedhjeve lokale 2015" src='/img/portfolio/harta/harta.png'>
+		<figcaption></figcaption>
+	</figure>	
+	<aside class="col-lg-3 col-lg-offset-1 col-md-4 col-sm-6 col-xs-12 category-sidebar">
+		<h2 class="aside-header">Postime rreth projektit</h2>
+		{% for post in site.categories.lokalet2015 %}
+			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+		{% endfor %}
+	</aside>	
 </section>
-<aside class="col-lg-3 col-md-3 col-sm-3 col-xs-12 category-sidebar">
-<h2>Postime rreth projektit</h2>
-{% for post in site.categories.lokalet2015 %}
-	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</aside>

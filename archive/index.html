@@ -1,6 +1,6 @@
 ---
 layout: blog-archive
-title: Archive for all the blogposts
+title: Archive for all the blog posts
 subTitle: Innovation is now an empty signifier.
 ---
 
@@ -21,9 +21,9 @@ subTitle: Innovation is now an empty signifier.
 		<h3 class="formal-heading">Lista e postimeve</h3>
 		{% for post in site.posts %}
 			<article class="article article-{{post.category}}">
-				<h3><a href="/reclaim{{post.url}}">{{post.title}}</a></h3>
+				<h3><a href="{{post.url}}">{{post.title}}</a></h3>
 				<p>{{post.excerpt}}
-				<a href="/reclaim/{{post.url}}">Lexo <i class="fa fa-long-arrow-right"></i></a></p>
+				<a href="/{{post.url}}">Lexo <i class="fa fa-long-arrow-right"></i></a></p>
 			</article>
 		{% endfor %}
 	</section>
