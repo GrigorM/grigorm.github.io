@@ -1,0 +1,214 @@
+---
+layout: default
+title: Disinnovate
+subTitle: Innovation is now an empty signifier.
+---
+<script>
+var canvas, nav, title;
+var rectang = new Array(2);
+var arcs = new Array(3);
+var sines = new Array(1);
+
+function setup(){
+	canvas = createCanvas(window.innerWidth, window.innerHeight);
+	createTitle();
+	navigation();
+	for(var i =0; i<rectang.length; i++){
+		rectang[i] = new Rects();
+	}
+	for(var i =0; i<arcs.length; i++){
+		arcs[i] = new Arcs();
+	}	
+	for(var j=0; j<sines.length; j++){
+		sines[j] = new Sines();
+	}	
+}
+function createTitle(){
+	title = createDiv("DISINNOVATE");
+	title.class("center-title");
+	//title.style('top', window.innerHeight/3);
+	title.position(0, window.innerHeight/3);
+}
+function navigation(){
+	nav = createElement('nav');
+	nav.id('menu');
+	nav.class('navigation');
+	//nav.style('top', window.innerHeight/3 + 70);
+	nav.position(0, window.innerHeight/3 + 70);
+	var projects = createA('/reclaim/projects', 'projekte');
+	projects.parent('menu');
+	var blog = createA('/reclaim/archive', 'blog');
+	blog.parent('menu');
+	var about = createA('/reclaim/about', 'rreth faqes');
+	about.parent('menu');	
+}
+
+function draw(){
+	background(255);
+	for(var i=0; i<rectang.length; i++){
+		rectang[i].be();
+	}
+	for(var i=0; i<arcs.length; i++){
+		arcs[i].be();
+	}
+	for(var j=0; j<sines.length; j++){
+		sines[j].be();
+	}
+}
+
+function windowResized() {
+  resizeCanvas(window.innerWidth, window.innerHeight);
+}
+
+function Circles(){
+	
+}
+
+function Sines(){
+	this.x = random(50, width-50);
+	this.y = random(50, height-50);
+	this.num = int(random(1, 4));
+	this.lim = 0;
+	this.op = random(-150, -50);
+	this.rot = int(random(1, 5));
+	this.amp = (random(20, 50));
+	this.reborn = random(-200, -50);
+	
+	this.be = function(){
+		push();
+		translate(this.x, this.y);
+		rotate(this.rot*PI/2);
+		stroke(0, this.op);
+		for(var n = 0; n<this.num; n++){
+			beginShape();
+			for(var i=0; i<this.lim; i++){
+				vertex(i, n*10 + this.amp*sin(i/(5*TWO_PI)));
+			}
+			endShape();
+		}
+		pop;
+		if(this.lim<(5*TWO_PI*TWO_PI + 10)){
+			this.lim+=7;
+		}else{
+			this.fade();
+		}
+	}
+	
+	this.fade = function(){
+		this.op -= 5;
+		if(this.op < this.reborn){
+			this.x = random(10, width-50);
+			this.y = random(20, height-20);
+			this.num = int(random(1, 4));
+			this.amp = (random(20, 50));
+			this.lim = 0;
+			this.op = 255;	
+			this.rot = int(random(1, 5));	
+			this.reborn = random(-200, -50);
+		}
+	}
+
+}
+
+function Arcs(){
+	this.x = random(30, width-30);
+	this.y = random(30, height-30);
+	this.n = int(random(2, 5));
+	this.r0 = random(50, 79);
+	this.angles = [];
+	this.speeds = [];
+	this.life = random(100, 400);
+	this.op = random(-150, -50);
+	this.reborn = random(-200, -50);
+	
+	for(var i=0; i<this.n; i++){
+		this.angles[i] = random(TWO_PI);
+		if(random(1)>0.5) this.speeds[i] = random(0.03, 0.05);
+		else this.speeds[i] = random(-0.05, -0.03);
+	}
+	
+	this.be = function(){
+		if(this.op>3){
+			noFill();
+			stroke(0, this.op);
+			for(var i=0; i<this.n; i++){
+				push();
+				translate(this.x, this.y);
+				rotate(this.angles[i]);
+				arc(0, 0, this.r0+i*25, this.r0+i*25, 0, PI*1.1 );
+				this.angles[i] += this.speeds[i];
+				pop();
+			}
+		}
+		this.life--;
+		if(this.life<0){
+			this.fade();
+		}
+	}
+	
+	this.fade = function(){
+		this.op -= 5;
+		if(this.op < this.reborn){
+			this.x = random(width);
+			this.y = random(height);
+			this.n = int(random(2, 5));
+			for(var i=0; i<this.n; i++){
+				this.angles[i] = random(TWO_PI);
+				if(random(1)>0.5) this.speeds[i] = random(0.03, 0.05);
+				else this.speeds[i] = random(-0.05, -0.03);
+			}			
+			this.life = random(100, 400);
+			this.op = 255;	
+			this.reborn = random(-200, -50);
+		}
+	}
+}
+
+function Rects(){
+	this.w = random(50, 125);
+	this.h = this.w;
+	this.x = random(30, width-30);
+	this.y = random(30, height-30);
+	this.angle = random(TWO_PI);
+	if(random(1)>0.5) this.rotSpeed = 0.02;
+	else this.rotSpeed = -0.02;
+	this.op = random(-150, -100);
+	this.life = random(100, 400);
+	this.reborn = random(-200, -50);
+	rectMode(CENTER);
+	
+	this.be = function(){
+		if(this.op>3){
+			push();
+			translate(this.x, this.y);
+			rotate(this.angle);
+			stroke(0, this.op);
+			rect(0, 0, this.w, this.h);
+			this.angle += this.rotSpeed;
+			pop();
+		}
+		this.life--;
+		if(this.life<0){
+			this.fade();
+		}
+	}
+	this.fade = function(){
+		this.op -= 5;
+		if(this.op < this.reborn){
+			this.x = random(30, width-30);
+			this.y = random(30, height-30);
+			if(random(1)>0.5) this.rotSpeed = 0.02;
+			else this.rotSpeed = -0.02;				
+			this.life = random(100, 400);
+			this.op = 255;				
+			this.reborn = random(-200, -50);
+		}
+	}	
+
+}
+
+function Triangles(){
+
+}
+
+</script>

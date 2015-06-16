@@ -1,0 +1,30 @@
+---
+layout: blog-archive
+title: Archive for all the blogposts
+subTitle: Innovation is now an empty signifier.
+---
+
+<br/>
+<br/>
+<section class="col-lg-9 col-md-9 col-sm-12 col-xs-12 lefty">
+	<h2 class="left fix-alignment">ARKIVA <span class="gray"> ______________</span></h2>
+	<br/>	
+	<section class="fix-alignment">
+		<h3>Kategoritë</h3>
+		<span id="all">të gjitha</span>&nbsp;&nbsp;&nbsp;
+		{% for category in site.categories %}
+			<span class="category-link">{{category}}</span>&nbsp;&nbsp;&nbsp;
+		{% endfor %}
+	</section>
+	<br/>
+	<section class="fix-alignment" id="blog">
+		<h3 class="formal-heading">Lista e postimeve</h3>
+		{% for post in site.posts %}
+			<article class="article article-{{post.category}}">
+				<h3><a href="/reclaim{{post.url}}">{{post.title}}</a></h3>
+				<p>{{post.excerpt}}
+				<a href="/reclaim/{{post.url}}">Lexo <i class="fa fa-long-arrow-right"></i></a></p>
+			</article>
+		{% endfor %}
+	</section>
+</section>

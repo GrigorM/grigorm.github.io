@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body itemscope itemtype="http://schema.org/Article">
+	<h1 class="formal-heading">Dissinovate - Blog</h1>
+	<main class="wrapper">
+		{% include topmenu.html %}
+		<div class="row">
+			<br/>
+			<br/>
+			<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 lefty">
+				<h2 class="post-title fix-alignment">{{ page.title }}</h2>
+				<br/>
+				{{ content }}
+			</section>
+		</div>
+		{% include footer.html %}
+		{% include js.html %}
+	</main>
+  </body>
+</html>

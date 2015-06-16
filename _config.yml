@@ -1,0 +1,26 @@
+--- 
+author: "Grigor Malo"
+description: "Technology, creative coding, politics, philosophy, blogging, all sort of keywords to trick f***ing Google."
+email: grigormalo@gmail.com
+markdown: kramdown
+permalink: pretty
+encoding: UTF-8
+social: 
+  - 
+    icon: twitter
+    title: twitter
+    url: "https://twitter.com/grigormalo"
+  - 
+    icon: github
+    title: github
+    url: "https://github.com/GrigorM"
+  - 
+    icon: envelope
+    title: mail
+    url: "mailto:grigormalo@gmail.com"
+  - 
+    icon: facebook
+    title: facebook
+    url: "https://facebook.com/grigor.komunisti"	
+title: Disinnovate
+url: grigorm.github.io/reclaim/
