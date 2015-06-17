@@ -686,3 +686,4 @@ span#all:hover, span.category-link:hover { text-decoration:underline; color: #b7
 .navigation { font-size:23px; font-family:'Clear Sans Light', consolas; width:100%; text-align:center; position: absolute; }
 .navigation a{ margin: 0 10px; }
 .aside-header { margin-top: 0; }
+.content-area { margin-bottom:100px; }
