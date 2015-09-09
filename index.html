@@ -3,7 +3,7 @@ layout: default
 title: Disinnovate
 subTitle: Innovation is now an empty signifier.
 ---
-<script>/*
+<script>
 var canvas, nav, title;
 var rectang = new Array(2);
 var arcs = new Array(3);
@@ -18,10 +18,10 @@ function setup(){
 	}
 	for(var i =0; i<arcs.length; i++){
 		arcs[i] = new Arcs();
-	}	
+	}
 	for(var j=0; j<sines.length; j++){
 		sines[j] = new Sines();
-	}	
+	}
 }
 function createTitle(){
 	title = createDiv("DISINNOVATE");
@@ -40,7 +40,7 @@ function navigation(){
 	var blog = createA('/archive', 'blog');
 	blog.parent('menu');
 	var about = createA('/about', 'rreth faqes');
-	about.parent('menu');	
+	about.parent('menu');
 }
 
 function draw(){
@@ -61,7 +61,7 @@ function windowResized() {
 }
 
 function Circles(){
-	
+
 }
 
 function Sines(){
@@ -73,7 +73,7 @@ function Sines(){
 	this.rot = int(random(1, 5));
 	this.amp = (random(20, 50));
 	this.reborn = random(-200, -50);
-	
+
 	this.be = function(){
 		push();
 		translate(this.x, this.y);
@@ -93,7 +93,7 @@ function Sines(){
 			this.fade();
 		}
 	}
-	
+
 	this.fade = function(){
 		this.op -= 5;
 		if(this.op < this.reborn){
@@ -102,8 +102,8 @@ function Sines(){
 			this.num = int(random(1, 4));
 			this.amp = (random(20, 50));
 			this.lim = 0;
-			this.op = 255;	
-			this.rot = int(random(1, 5));	
+			this.op = 255;
+			this.rot = int(random(1, 5));
 			this.reborn = random(-200, -50);
 		}
 	}
@@ -120,13 +120,13 @@ function Arcs(){
 	this.life = random(100, 400);
 	this.op = random(-150, -50);
 	this.reborn = random(-200, -50);
-	
+
 	for(var i=0; i<this.n; i++){
 		this.angles[i] = random(TWO_PI);
 		if(random(1)>0.5) this.speeds[i] = random(0.03, 0.05);
 		else this.speeds[i] = random(-0.05, -0.03);
 	}
-	
+
 	this.be = function(){
 		if(this.op>3){
 			noFill();
@@ -145,7 +145,7 @@ function Arcs(){
 			this.fade();
 		}
 	}
-	
+
 	this.fade = function(){
 		this.op -= 5;
 		if(this.op < this.reborn){
@@ -156,9 +156,9 @@ function Arcs(){
 				this.angles[i] = random(TWO_PI);
 				if(random(1)>0.5) this.speeds[i] = random(0.03, 0.05);
 				else this.speeds[i] = random(-0.05, -0.03);
-			}			
+			}
 			this.life = random(100, 400);
-			this.op = 255;	
+			this.op = 255;
 			this.reborn = random(-200, -50);
 		}
 	}
@@ -176,7 +176,7 @@ function Rects(){
 	this.life = random(100, 400);
 	this.reborn = random(-200, -50);
 	rectMode(CENTER);
-	
+
 	this.be = function(){
 		if(this.op>3){
 			push();
@@ -198,17 +198,17 @@ function Rects(){
 			this.x = random(30, width-30);
 			this.y = random(30, height-30);
 			if(random(1)>0.5) this.rotSpeed = 0.02;
-			else this.rotSpeed = -0.02;				
+			else this.rotSpeed = -0.02;
 			this.life = random(100, 400);
-			this.op = 255;				
+			this.op = 255;
 			this.reborn = random(-200, -50);
 		}
-	}	
+	}
 
 }
 
 function Triangles(){
 
 }
-*/
+
 </script>
