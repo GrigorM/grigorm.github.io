@@ -8,12 +8,12 @@ subTitle: Innovation is now an empty signifier.
 <br/>
 <section class="col-lg-9 col-md-9 col-sm-12 col-xs-12 lefty">
 	<h2 class="left fix-alignment">ARKIVA <span class="gray"> ______________</span></h2>
-	<p></p>	
+	<p></p>
 	<section class="fix-alignment">
 		<h3>Kategoritë</h3>
 		<div><span id="all">të gjitha</span>&nbsp;&nbsp;&nbsp;
 		{% for category in site.categories %}
-			<span class="category-link">{{category}}</span>&nbsp;&nbsp;&nbsp;
+			<span class="category-link">{{ category | first }}</span>&nbsp;&nbsp;&nbsp;
 		{% endfor %}</div>
 	</section>
 	<p></p>
