@@ -3,7 +3,6 @@ $(document).ready(function(){
 	$('.category-link *').remove();
 
 	$(".category-link").click(function(e) {
-		alert($(this).html());
 		$(".article").hide();
 		$(".article-" + $(this).html()).show();
 	});
