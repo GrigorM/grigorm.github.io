@@ -1,26 +1,26 @@
---- 
+---
 author: "Grigor Malo"
 description: "Technology, creative coding, politics, philosophy, tech criticism, blogging."
 email: grigormalo@gmail.com
 markdown: kramdown
 permalink: pretty
 encoding: UTF-8
-social: 
-  - 
+social:
+  -
     icon: twitter
     title: twitter
     url: "https://twitter.com/grigormalo"
-  - 
+  -
     icon: github
     title: github
     url: "https://github.com/GrigorM"
-  - 
+  -
     icon: envelope
     title: mail
     url: "mailto:grigormalo@gmail.com"
-  - 
+  -
     icon: facebook
     title: facebook
-    url: "https://facebook.com/grigor.komunisti"	
+    url: "https://facebook.com/grigor.komunisti"
 title: Disinnovate
 url: http://grigorm.github.io
