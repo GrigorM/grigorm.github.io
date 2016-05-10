@@ -4,7 +4,7 @@ layout: post
 title: "Nje muaj plot me .gif-e"
 excerpt: "Kete muaj vendosa t'i rikthehem gifloopcoder..."
 lang: sq
-image: images/gif-may.png
+image: /img/gif-may.png
 ---
 
 Këtë muaj vendosa t'i rikthehem [gifloopcoder](http://gifloopcoder.com){:target="_blank_"}, ose më saktë të mësoj seriozisht ta përdor (kupto: seriozisht siç mund të marrësh seriozisht një lojë). Gifloopcoder është një aplikacion i bazuar në javascript për krijimin e gifeve të animuara. Gjithmonë më kanë tërhequr përdorimet jokonvencionale të kodit për të krijuar gjëra pa ndonje dobi të veçantë, dhe gifet e përmbushin mjaft mirë këtë kriter. Ndaj për cdo ditë në vazhdim të muajit maj do postoj nje gif të krijuar me gifloopcoder, të shoqeruar me kodin burim. Pa e zgjatur shumë, ja ku është lista:
