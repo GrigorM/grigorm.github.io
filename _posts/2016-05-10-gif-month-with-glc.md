@@ -39,7 +39,7 @@ var data = { gifs : [
     code: "http://pastebin.com/uxYcDBzT"
   },
   {
-    url: "https://media.giphy.com/media/l396QJYTj8W1KWEko/giphy.gif",
+    url: "https://media.giphy.com/media/l0K45Xgyn16uryXde/giphy.gif",
     description: "Hexagonal waves",
     date: "11 maj",
     code: "http://pastebin.com/FwQ6P6MT"
