@@ -14,7 +14,7 @@ Këtë muaj vendosa t'i rikthehem [gifloopcoder](http://gifloopcoder.com){:targe
   {{#gifs}}
   <div class="col-sm-3 col-xs-6">
     <a href="{{url}}">
-      <img src="{{url}}" alt="{{description}}" style="width: 100%;" hspace="8" vspace="8" align="center" border="2" />
+      <img src="/img/{{thumbnail}}" alt="{{description}}" style="width: 100%;" hspace="8" vspace="8" align="center" border="2" />
     </a>
     <div class="text-center">{{date}}, <a href="{{code}}" target="_blank_">kodi burim</a></div>
   </div>
@@ -29,21 +29,31 @@ var data = { gifs : [
   {
     url: "https://media.giphy.com/media/l396NsQTsbuU9ireM/giphy.gif",
     description: "Rotating rects",
+    thumbnail: "rects101.png",
     date: "9 maj",
     code: "http://pastebin.com/NYzZVtum"
   },
   {
     url: "https://media.giphy.com/media/3o6Ei16WlqqiXfyc7u/giphy.gif",
     description: "Rects and circles",
+    thumbnail: "rects-and-circles.png",
     date: "10 maj",
     code: "http://pastebin.com/uxYcDBzT"
   },
   {
     url: "https://media.giphy.com/media/l0K45Xgyn16uryXde/giphy.gif",
     description: "Hexagonal waves",
+    thumbnail: "hex-waves.png",
     date: "11 maj",
     code: "http://pastebin.com/FwQ6P6MT"
-  }
+  },
+  {
+    url: "https://media.giphy.com/media/xT4uQnR1OnSp7HXJkY/giphy.gif",
+    description: "Concentric hexs",
+    thumbnail: "hex.png",
+    date: "12 maj",
+    code: "http://pastebin.com/8wE6PBZE"
+  }  
 ] };
 
 var source = $("#gif-list").html();
