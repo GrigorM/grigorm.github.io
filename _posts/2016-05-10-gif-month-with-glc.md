@@ -53,7 +53,14 @@ var data = { gifs : [
     thumbnail: "hex.png",
     date: "12 maj",
     code: "http://pastebin.com/8wE6PBZE"
-  }  
+  },
+  {
+    url: "https://media.giphy.com/media/xT4uQvBc2tt9JmfNtK/giphy.gif",
+    description: "Flying carpet",
+    thumbnail: "carpet.png",
+    date: "13 maj",
+    code: "http://pastebin.com/1nBp8gtK"
+  }    
 ] };
 
 var source = $("#gif-list").html();
