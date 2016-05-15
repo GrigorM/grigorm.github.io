@@ -67,7 +67,14 @@ var data = { gifs : [
     thumbnail: "concentric-waves.png",
     date: "14 maj",
     code: "http://pastebin.com/hDSAC9M1"
-  }   
+  },
+  {
+    url: "https://media.giphy.com/media/l0K4gDkvZ2JYXKew8/giphy.gif",
+    description: "Carpet 2",
+    thumbnail: "tapeti-2.png",
+    date: "15 maj",
+    code: "http://pastebin.com/CnKPwZp9"
+  }    
 ] };
 
 var source = $("#gif-list").html();
