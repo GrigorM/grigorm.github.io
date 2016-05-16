@@ -74,7 +74,14 @@ var data = { gifs : [
     thumbnail: "tapeti-2.png",
     date: "15 maj",
     code: "http://pastebin.com/CnKPwZp9"
-  }    
+  },
+  {
+    url: "https://media.giphy.com/media/3o6EhKtkMkAZL1IHy8/giphy.gif",
+    description: "Grid",
+    thumbnail: "grid.png",
+    date: "16 maj",
+    code: "http://pastebin.com/v9NuHiM8"
+  }       
 ] };
 
 var source = $("#gif-list").html();
