@@ -81,7 +81,14 @@ var data = { gifs : [
     thumbnail: "grid.png",
     date: "16 maj",
     code: "http://pastebin.com/v9NuHiM8"
-  }       
+  },
+  {
+    url: "https://media.giphy.com/media/26vUtMKae1elzGAWA/giphy.gif",
+    description: "Triangles",
+    thumbnail: "test6.png",
+    date: "17 maj",
+    code: "http://pastebin.com/m4MKuA77"
+  }          
 ] };
 
 var source = $("#gif-list").html();
