@@ -88,6 +88,13 @@ var data = { gifs : [
     thumbnail: "test6.png",
     date: "17 maj",
     code: "http://pastebin.com/m4MKuA77"
+  },
+  {
+    url: "https://media.giphy.com/media/3o6EhE61Z7Vzi9soAU/giphy.gif",
+    description: "Thjesht dhe bukur",
+    thumbnail: "thjesht.png",
+    date: "18 maj",
+    code: "http://pastebin.com/acFikDs7"
   }          
 ] };
 
