@@ -99,7 +99,7 @@ var data = { gifs : [
   {
     url: "https://media.giphy.com/media/l396TS4WOsPqRyGvm/giphy.gif",
     description: "Hex grid",
-    thumbnail: "hex-grid.jpg",
+    thumbnail: "hex-grid.png",
     date: "19 maj",
     code: "http://pastebin.com/LaA0XW4P"
   }          
