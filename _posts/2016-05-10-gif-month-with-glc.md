@@ -102,7 +102,14 @@ var data = { gifs : [
     thumbnail: "hex-grid.png",
     date: "19 maj",
     code: "http://pastebin.com/LaA0XW4P"
-  }          
+  },
+  {
+    url: "https://media.giphy.com/media/l41YprL1N4hXrO2VG/giphy.gif",
+    description: "Hex rotations",
+    thumbnail: "hex-rotations.png",
+    date: "20 maj",
+    code: "http://pastebin.com/pj8c4zck"
+  }           
 ] };
 
 var source = $("#gif-list").html();
