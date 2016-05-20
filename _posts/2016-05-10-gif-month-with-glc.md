@@ -95,6 +95,13 @@ var data = { gifs : [
     thumbnail: "thjesht.png",
     date: "18 maj",
     code: "http://pastebin.com/acFikDs7"
+  },
+  {
+    url: "https://media.giphy.com/media/l396TS4WOsPqRyGvm/giphy.gif",
+    description: "Hex grid",
+    thumbnail: "hex-grid.jpg",
+    date: "19 maj",
+    code: "http://pastebin.com/LaA0XW4P"
   }          
 ] };
 
