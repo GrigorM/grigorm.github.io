@@ -115,7 +115,7 @@ var data = { gifs : [
     description: "Saturday morning randomness",
     thumbnail: "smr.png",
     date: "21 maj",
-    code: "http://pastebin.com/pj8c4zck"
+    code: "http://pastebin.com/kUuxJde9"
   }            
 ] };
 
