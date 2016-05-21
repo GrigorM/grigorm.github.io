@@ -109,7 +109,14 @@ var data = { gifs : [
     thumbnail: "hex-rotations.png",
     date: "20 maj",
     code: "http://pastebin.com/pj8c4zck"
-  }           
+  },
+  {
+    url: "https://media.giphy.com/media/3o6EhJ4mutR2PUmmhq/giphy.gif",
+    description: "Saturday morning randomness",
+    thumbnail: "smr.png",
+    date: "21 maj",
+    code: "http://pastebin.com/pj8c4zck"
+  }            
 ] };
 
 var source = $("#gif-list").html();
