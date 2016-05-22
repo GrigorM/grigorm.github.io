@@ -116,7 +116,14 @@ var data = { gifs : [
     thumbnail: "smr.png",
     date: "21 maj",
     code: "http://pastebin.com/kUuxJde9"
-  }            
+  },
+  {
+    url: "https://media.giphy.com/media/3o6EhUD41sTYYXaRjO/giphy.gif",
+    description: "Stars and rhombi",
+    thumbnail: "stars-and-rhombi.png",
+    date: "22 maj",
+    code: "http://pastebin.com/GeBzmpcF"
+  }              
 ] };
 
 var source = $("#gif-list").html();
