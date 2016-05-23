@@ -123,7 +123,14 @@ var data = { gifs : [
     thumbnail: "stars-and-rhombi.png",
     date: "22 maj",
     code: "http://pastebin.com/GeBzmpcF"
-  }              
+  },
+  {
+    url: "https://media.giphy.com/media/3o7qDSUXrOg7Mz3JD2/giphy.gif",
+    description: "Arcs rotation",
+    thumbnail: "arcs-rotation.png",
+    date: "23 maj",
+    code: "http://pastebin.com/Ppit3yJU"
+  }                
 ] };
 
 var source = $("#gif-list").html();
