@@ -130,7 +130,16 @@ var data = { gifs : [
     thumbnail: "arcs-rotation.png",
     date: "23 maj",
     code: "http://pastebin.com/Ppit3yJU"
-  }                
+  },
+  {
+    url: "https://media.giphy.com/media/xT4uQ9TQ8CBRSUZs40/giphy.gif",
+    description: "Particles with rotating motion",
+    thumbnail: "part-rot.png",
+    date: "24 maj",
+    code: "http://pastebin.com/RQvWjdby"
+  }     
+
+
 ] };
 
 var source = $("#gif-list").html();
