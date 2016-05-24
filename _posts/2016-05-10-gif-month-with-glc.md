@@ -132,7 +132,7 @@ var data = { gifs : [
     code: "http://pastebin.com/Ppit3yJU"
   },
   {
-    url: "https://media.giphy.com/media/xT4uQ9TQ8CBRSUZs40/giphy.gif",
+    url: "https://media.giphy.com/media/xT4uQ7RIeCskCwTlK0/giphy.gif",
     description: "Particles with rotating motion",
     thumbnail: "part-rot.png",
     date: "24 maj",
