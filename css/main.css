@@ -133,7 +133,7 @@ border: 0px solid transparent;
 	color: white;
 }
 
-.navbar-header .a:hover { 
+.navbar-header .a:hover {
 	background-color: #2f2f2f;
 	color: white;
 }
@@ -285,7 +285,7 @@ a:after {
 	background-position: center center;
 	min-height: 650px;
 	width: 100%;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -399,7 +399,7 @@ a:after {
     background-size: cover;
 
     background-attachment: relative;
-    
+
     text-align: center;
 }
 
@@ -522,7 +522,7 @@ a:after {
 	font-weight: 700;
 	text-align: left;
 	letter-spacing: 2px;
-	
+
 }
 
 .grid figcaption a {
@@ -656,7 +656,7 @@ a:after {
 #about {margin-bottom:55px;}
 .lefty { float: left; }
 .fix-alignment { margin-left:15px; }
-.gray { color: #b7b7b7; } 
+.gray { color: #b7b7b7; }
 
 a.w, footer a { color: #fff; }
 a.soc { color: #777; }
@@ -687,3 +687,7 @@ span#all:hover, span.category-link:hover { text-decoration:underline; color: #b7
 .navigation a{ margin: 0 10px; }
 .aside-header { margin-top: 0; }
 .content-area { margin-bottom:100px; }
+
+.modal-backdrop.in{
+  opacity: .8!important;
+}

@@ -13,7 +13,7 @@ Këtë muaj vendosa t'i rikthehem [gifloopcoder](http://gifloopcoder.com){:targe
   {% raw %}
   {{#gifs}}
   <div class="col-sm-3 col-xs-6">
-    <a href="{{url}}">
+    <a href="{{url}}" data-toggle="modal" data-target=".bs-example-modal-sm" data-content="/img/gifs/{{localurl}}" onclick='$(".modal-content img").attr("src", $(this).data("content"));'>  
       <img src="/img/{{thumbnail}}" alt="{{description}}" style="width: 100%;" hspace="8" vspace="8" align="center" border="2" />
     </a>
     <div class="text-center">{{date}}, <a href="{{code}}" target="_blank_">kodi burim</a></div>
@@ -28,6 +28,7 @@ Këtë muaj vendosa t'i rikthehem [gifloopcoder](http://gifloopcoder.com){:targe
 var data = { gifs : [
   {
     url: "https://media.giphy.com/media/l396NsQTsbuU9ireM/giphy.gif",
+    localurl: "9.gif",
     description: "Rotating rects",
     thumbnail: "rects101.png",
     date: "9 maj",
@@ -35,6 +36,7 @@ var data = { gifs : [
   },
   {
     url: "https://media.giphy.com/media/3o6Ei16WlqqiXfyc7u/giphy.gif",
+    localurl: "10.gif",
     description: "Rects and circles",
     thumbnail: "rects-and-circles.png",
     date: "10 maj",
@@ -42,6 +44,7 @@ var data = { gifs : [
   },
   {
     url: "https://media.giphy.com/media/l0K45Xgyn16uryXde/giphy.gif",
+    localurl: "11.gif",
     description: "Hexagonal waves",
     thumbnail: "hex-waves.png",
     date: "11 maj",
@@ -49,6 +52,7 @@ var data = { gifs : [
   },
   {
     url: "https://media.giphy.com/media/xT4uQnR1OnSp7HXJkY/giphy.gif",
+    localurl: "12.gif",
     description: "Concentric hexs",
     thumbnail: "hex.png",
     date: "12 maj",
@@ -56,6 +60,7 @@ var data = { gifs : [
   },
   {
     url: "https://media.giphy.com/media/xT4uQvBc2tt9JmfNtK/giphy.gif",
+    localurl: "13.gif",
     description: "Flying carpet",
     thumbnail: "carpet.png",
     date: "13 maj",
@@ -63,6 +68,7 @@ var data = { gifs : [
   },
   {
     url: "https://media.giphy.com/media/l396OkgEz1iJmbhCw/giphy.gif",
+    localurl: "14.gif",
     description: "Waves ",
     thumbnail: "concentric-waves.png",
     date: "14 maj",
@@ -70,6 +76,7 @@ var data = { gifs : [
   },
   {
     url: "https://media.giphy.com/media/l0K4gDkvZ2JYXKew8/giphy.gif",
+    localurl: "15.gif",
     description: "Carpet 2",
     thumbnail: "tapeti-2.png",
     date: "15 maj",
@@ -77,6 +84,7 @@ var data = { gifs : [
   },
   {
     url: "https://media.giphy.com/media/3o6EhKtkMkAZL1IHy8/giphy.gif",
+    localurl: "16.gif",
     description: "Grid",
     thumbnail: "grid.png",
     date: "16 maj",
@@ -84,6 +92,7 @@ var data = { gifs : [
   },
   {
     url: "https://media.giphy.com/media/26vUtMKae1elzGAWA/giphy.gif",
+    localurl: "17.gif",
     description: "Triangles",
     thumbnail: "test6.png",
     date: "17 maj",
@@ -91,6 +100,7 @@ var data = { gifs : [
   },
   {
     url: "https://media.giphy.com/media/3o6EhE61Z7Vzi9soAU/giphy.gif",
+    localurl: "18.gif",
     description: "Thjesht dhe bukur",
     thumbnail: "thjesht.png",
     date: "18 maj",
@@ -98,6 +108,7 @@ var data = { gifs : [
   },
   {
     url: "https://media.giphy.com/media/l396TS4WOsPqRyGvm/giphy.gif",
+    localurl: "19.gif",
     description: "Hex grid",
     thumbnail: "hex-grid.png",
     date: "19 maj",
@@ -105,6 +116,7 @@ var data = { gifs : [
   },
   {
     url: "https://media.giphy.com/media/l41YprL1N4hXrO2VG/giphy.gif",
+    localurl: "20.gif",
     description: "Hex rotations",
     thumbnail: "hex-rotations.png",
     date: "20 maj",
@@ -112,6 +124,7 @@ var data = { gifs : [
   },
   {
     url: "https://media.giphy.com/media/3o6EhJ4mutR2PUmmhq/giphy.gif",
+    localurl: "21.gif",
     description: "Saturday morning randomness",
     thumbnail: "smr.png",
     date: "21 maj",
@@ -119,6 +132,7 @@ var data = { gifs : [
   },
   {
     url: "https://media.giphy.com/media/3o6EhUD41sTYYXaRjO/giphy.gif",
+    localurl: "22.gif",
     description: "Stars and rhombi",
     thumbnail: "stars-and-rhombi.png",
     date: "22 maj",
@@ -126,6 +140,7 @@ var data = { gifs : [
   },
   {
     url: "https://media.giphy.com/media/3o7qDSUXrOg7Mz3JD2/giphy.gif",
+    localurl: "23.gif",
     description: "Arcs rotation",
     thumbnail: "arcs-rotation.png",
     date: "23 maj",
@@ -133,6 +148,7 @@ var data = { gifs : [
   },
   {
     url: "https://media.giphy.com/media/xT4uQ7RIeCskCwTlK0/giphy.gif",
+    localurl: "24.gif",
     description: "Particles with rotating motion",
     thumbnail: "part-rot.png",
     date: "24 maj",
@@ -149,11 +165,23 @@ setTimeout(function(){
   $("#lista").html(html);  
 }, 10)
 
+
+$("#lista a").click(function(){
+  console.log($(this).data('content'));
+
+});
 </script>
 
 <div class="row" id="lista" style="margin-bottom: 50px;">
 
 </div>
 
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <img src="" alt="#"/>
+    </div>
+  </div>
+</div>
 
 Sa per saktesim, ne anglisht lexohet "xhif", por per sa kohe flasim shqip do ta lexojme ashtu sic shkruhet, pra gif.
