@@ -13,7 +13,7 @@ Këtë muaj vendosa t'i rikthehem [gifloopcoder](http://gifloopcoder.com){:targe
   {% raw %}
   {{#gifs}}
   <div class="col-sm-3 col-xs-6">
-    <a href="{{url}}" data-toggle="modal" data-target=".bs-example-modal-sm" data-content="/img/gifs/{{localurl}}" onclick='$(".modal-content img").attr("src", $(this).data("content"));'>  
+    <a href="{{url}}" target="_blank_" data-content="/img/gifs/{{localurl}}" > <!--data-toggle="modal" data-target=".bs-example-modal-sm" onclick='$(".modal-content img").attr("src", $(this).data("content"));' -->
       <img src="/img/{{thumbnail}}" alt="{{description}}" style="width: 100%;" hspace="8" vspace="8" align="center" border="2" />
     </a>
     <div class="text-center">{{date}}, <a href="{{code}}" target="_blank_">kodi burim</a></div>
