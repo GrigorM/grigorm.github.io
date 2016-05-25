@@ -153,7 +153,15 @@ var data = { gifs : [
     thumbnail: "part-rot.png",
     date: "24 maj",
     code: "http://pastebin.com/RQvWjdby"
-  }     
+  },
+  {
+    url: "https://media.giphy.com/media/3oAt1KVxdCiuTYWaGs/giphy.gif",
+    localurl: "25.gif",
+    description: "Bezier waves",
+    thumbnail: "bezier-waves.png",
+    date: "25 maj",
+    code: "http://pastebin.com/stW2LYrJ"
+  }       
 
 
 ] };
