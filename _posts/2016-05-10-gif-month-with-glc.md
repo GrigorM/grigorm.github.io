@@ -161,6 +161,14 @@ var data = { gifs : [
     thumbnail: "bezier-waves.png",
     date: "25 maj",
     code: "http://pastebin.com/stW2LYrJ"
+  },
+  {
+    url: "https://media.giphy.com/media/l41Yzi2JTmvcoa8yQ/giphy.gif",
+    localurl: "26.gif",
+    description: "Lissajous curves",
+    thumbnail: "lissajous.png",
+    date: "26 maj",
+    code: "http://pastebin.com/qdRC0YS9"
   }       
 
 
