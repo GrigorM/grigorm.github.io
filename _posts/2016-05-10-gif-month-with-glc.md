@@ -177,6 +177,14 @@ var data = { gifs : [
     thumbnail: "flowers.png",
     date: "27 maj",
     code: "http://pastebin.com/KLR5ANXy"
+  },
+  {
+    url: "https://media.giphy.com/media/3oD3Yt0c3Jr2lnpkje/giphy.gif",
+    localurl: "28.gif",
+    description: "Sine waves",
+    thumbnail: "sine-waves.png",
+    date: "28 maj",
+    code: "http://pastebin.com/Dwxhx3Jt"
   }       
 
 
