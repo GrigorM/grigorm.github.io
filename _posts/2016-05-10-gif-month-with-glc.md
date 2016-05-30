@@ -189,10 +189,18 @@ var data = { gifs : [
   {
     url: "https://media.giphy.com/media/3oEjHUIgpKY03gOdUI/giphy.gif",
     localurl: "29.gif",
-    description: "concentric sines",
+    description: "Concentric sines",
     thumbnail: "sines.png",
     date: "29 maj",
     code: "http://pastebin.com/6vD6K5kZ"
+  },
+  {
+    url: "https://media.giphy.com/media/26BoCtWT4KxmspjGg/giphy.gif",
+    localurl: "30.gif",
+    description: "Complex sines",
+    thumbnail: "complex-sines.png",
+    date: "30 maj",
+    code: "http://pastebin.com/dmAdmB1Q"
   }         
 
 
