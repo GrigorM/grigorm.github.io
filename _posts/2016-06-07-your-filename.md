@@ -1,6 +1,8 @@
 ---
 published: true
 category: test
+layout: post
+excerpt: bla bla bla
 ---
 ### Post title test bla bla
 
