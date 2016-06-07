@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 category: test
 ---
 ### Post title test bla bla
