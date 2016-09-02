@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+<head>
+<meta name="dtb:uid" content="a9781784780982"/>
+<meta name="dtb:depth" content="0"/>
+<meta name="dtb:totalPageCount" content="254"/>
+<meta name="dtb:maxPageNumber" content="0"/>
+</head>
+<docTitle><text>Inventing the Future: Postcapitalism and a World Without Work</text></docTitle>
+<docAuthor><text>Nick Srnicek</text></docAuthor>
+<docAuthor><text>Alex Williams</text></docAuthor>
+<navMap>
+<navPoint playOrder="1" id="nav_1"><navLabel><text>Cover Page</text></navLabel><content src="CoverG1441rigorMalogrigormalogmailcom.xhtml"/></navPoint>
+<navPoint playOrder="2" id="nav_2"><navLabel><text>Halftitle Page</text></navLabel><content src="01_HalftitleGrigorMalogrigormalogmai952lcom.xhtml"/></navPoint>
+<navPoint playOrder="3" id="nav_3"><navLabel><text>Title Page</text></navLabel><content src="02_TitleGrigorMalogr1396igormalogmailcom.xhtml"/></navPoint>
+<navPoint playOrder="4" id="nav_4"><navLabel><text>Copyright Page</text></navLabel><content src="03_CopyrightGrigorMalog9087rigormalogmailcom.xhtml"/></navPoint>
+<navPoint playOrder="5" id="nav_5"><navLabel><text>Contents</text></navLabel><content src="04_ContentsGri1984gorMalogrigormalogmailcom.xhtml"/></navPoint>
+<navPoint playOrder="6" id="nav_6"><navLabel><text>Acknowledgements</text></navLabel><content src="05_AckGrigorMalo285grigormalogmailcom.xhtml"/></navPoint>
+<navPoint playOrder="7" id="nav_7"><navLabel><text>Introduction</text></navLabel><content src="06_IntroGrigorMalogrigormalogmailco8298m.xhtml"/></navPoint>
+<navPoint playOrder="8" id="nav_8"><navLabel><text>Chapter 1: Our Political Common Sense: Introducing Folk Politics</text></navLabel><content src="07_Chapter14126GrigorMalogrigormalogmailcom.xhtml"/></navPoint>
+<navPoint playOrder="9" id="nav_9"><navLabel><text>Chapter 2: Why Aren&#x2019;t We Winning? A Critique of Today&#x2019;s Left</text></navLabel><content src="08_Chapter2GrigorMalogrigormalog4521mailcom.xhtml"/></navPoint>
+<navPoint playOrder="10" id="nav_10"><navLabel><text>Chapter 3: Why Are They Winning? The Making of Neoliberal Hegemony</text></navLabel><content src="09_Chapter3Grigor7329Malogrigormalogmailcom.xhtml"/></navPoint>
+<navPoint playOrder="11" id="nav_11"><navLabel><text>Chapter 4: Left Modernity</text></navLabel><content src="10_Chapter4Grigo7864rMalogrigormalogmailcom.xhtml"/></navPoint>
+<navPoint playOrder="12" id="nav_12"><navLabel><text>Chapter 5: The Future Isn&#x2019;t Working</text></navLabel><content src="11_Chapter5GrigorMalogrigormalogmail5730com.xhtml"/></navPoint>
+<navPoint playOrder="13" id="nav_13"><navLabel><text>Chapter 6: Post-Work Imaginaries</text></navLabel><content src="12_Chapter6GrigorMalogr1312igormalogmailcom.xhtml"/></navPoint>
+<navPoint playOrder="14" id="nav_14"><navLabel><text>Chapter 7: A New Common Sense</text></navLabel><content src="13_Chapter7Gr9253igorMalogrigormalogmailcom.xhtml"/></navPoint>
+<navPoint playOrder="15" id="nav_15"><navLabel><text>Chapter 8: Building Power</text></navLabel><content src="14_Chapter8Grigo7562rMalogrigormalogmailcom.xhtml"/></navPoint>
+<navPoint playOrder="16" id="nav_16"><navLabel><text>Conclusion</text></navLabel><content src="15_ConclusionG1969rigorMalogrigormalogmailcom.xhtml"/></navPoint>
+<navPoint playOrder="17" id="nav_17"><navLabel><text>Notes</text></navLabel><content src="16_NotesGrigorMalogrigormalogmail8570com.xhtml"/></navPoint>
+<navPoint playOrder="18" id="nav_18"><navLabel><text>Index</text></navLabel><content src="17_IndexGrigorMa3532logrigormalogmailcom.xhtml"/></navPoint>
+<navPoint playOrder="19" id="BooXtream"><navLabel><text>This eBook is licensed to Grigor Malo, grigormalo@gmail.com on 03/31/2016</text></navLabel><content src="disclaimerGrigorMal2380ogrigormalogmailcom.xhtml"/></navPoint></navMap>
+</ncx>

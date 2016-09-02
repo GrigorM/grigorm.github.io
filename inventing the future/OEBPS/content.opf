@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="a9781784780982">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:opf="http://www.idpf.org/2007/opf">
+<dc:title>Inventing the Future: Postcapitalism and a World Without Work</dc:title>
+<dc:creator>Nick Srnicek</dc:creator>
+<dc:creator>Alex Williams</dc:creator>
+<dc:publisher>Verso</dc:publisher>
+<dc:rights>© Nick Srnicek and Alex Williams 2015</dc:rights>
+<dc:identifier id="a9781784780982">a9781784780982</dc:identifier>
+<dc:language>en-US</dc:language>
+<meta name="cover" content="cover-image"/>
+</metadata>
+<manifest>
+<item id="cover" href="CoverG1441rigorMalogrigormalogmailcom.xhtml" media-type="application/xhtml+xml"/>
+<item id="Halftitle" href="01_HalftitleGrigorMalogrigormalogmai952lcom.xhtml" media-type="application/xhtml+xml"/>
+<item id="Title" href="02_TitleGrigorMalogr1396igormalogmailcom.xhtml" media-type="application/xhtml+xml"/>
+<item id="Copyright" href="03_CopyrightGrigorMalog9087rigormalogmailcom.xhtml" media-type="application/xhtml+xml"/>
+<item id="Contents" href="04_ContentsGri1984gorMalogrigormalogmailcom.xhtml" media-type="application/xhtml+xml"/>
+<item id="Ack" href="05_AckGrigorMalo285grigormalogmailcom.xhtml" media-type="application/xhtml+xml"/>
+<item id="Intro" href="06_IntroGrigorMalogrigormalogmailco8298m.xhtml" media-type="application/xhtml+xml"/>
+<item id="Chapter1" href="07_Chapter14126GrigorMalogrigormalogmailcom.xhtml" media-type="application/xhtml+xml"/>
+<item id="Chapter2" href="08_Chapter2GrigorMalogrigormalog4521mailcom.xhtml" media-type="application/xhtml+xml"/>
+<item id="Chapter3" href="09_Chapter3Grigor7329Malogrigormalogmailcom.xhtml" media-type="application/xhtml+xml"/>
+<item id="Chapter4" href="10_Chapter4Grigo7864rMalogrigormalogmailcom.xhtml" media-type="application/xhtml+xml"/>
+<item id="Chapter5" href="11_Chapter5GrigorMalogrigormalogmail5730com.xhtml" media-type="application/xhtml+xml"/>
+<item id="Chapter6" href="12_Chapter6GrigorMalogr1312igormalogmailcom.xhtml" media-type="application/xhtml+xml"/>
+<item id="Chapter7" href="13_Chapter7Gr9253igorMalogrigormalogmailcom.xhtml" media-type="application/xhtml+xml"/>
+<item id="Chapter8" href="14_Chapter8Grigo7562rMalogrigormalogmailcom.xhtml" media-type="application/xhtml+xml"/>
+<item id="Conclusion" href="15_ConclusionG1969rigorMalogrigormalogmailcom.xhtml" media-type="application/xhtml+xml"/>
+<item id="Notes" href="16_NotesGrigorMalogrigormalogmail8570com.xhtml" media-type="application/xhtml+xml"/>
+<item id="Index" href="17_IndexGrigorMa3532logrigormalogmailcom.xhtml" media-type="application/xhtml+xml"/>
+<item id="style" href="templateGrigorMalogrigormalogmailcom7220.css" media-type="text/css"/>
+<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+<item id="img2" href="images/img_piiiGrigorM887alogrigormalogmailcom.png" media-type="image/png"/>
+<item id="cover-image" href="images/CoverGrigorMalogrigormalogmailc6600om.jpg" media-type="image/jpeg"/>
+<item id="font1" href="fonts/DejaVuSerifGri8910gorMalogrigormalogmailcom.ttf" media-type="application/x-font-ttf"/>
+<item id="exlibris" href="exlibrisGrigorMalogri1348gormalogmailcom.png" media-type="image/png"/><item id="BooXtream" href="disclaimerGrigorMal2380ogrigormalogmailcom.xhtml" media-type="application/xhtml+xml"/></manifest>
+<spine toc="ncx">
+<itemref idref="cover" linear="yes"/>
+<itemref idref="Halftitle" linear="yes"/>
+<itemref idref="Title" linear="yes"/>
+<itemref idref="Copyright" linear="yes"/>
+<itemref idref="Contents" linear="yes"/>
+<itemref idref="Ack" linear="yes"/>
+<itemref idref="Intro" linear="yes"/>
+<itemref idref="Chapter1" linear="yes"/>
+<itemref idref="Chapter2" linear="yes"/>
+<itemref idref="Chapter3" linear="yes"/>
+<itemref idref="Chapter4" linear="yes"/>
+<itemref idref="Chapter5" linear="yes"/>
+<itemref idref="Chapter6" linear="yes"/>
+<itemref idref="Chapter7" linear="yes"/>
+<itemref idref="Chapter8" linear="yes"/>
+<itemref idref="Conclusion" linear="yes"/>
+<itemref idref="Notes" linear="yes"/>
+<itemref idref="Index" linear="yes"/>
+<itemref idref="BooXtream"/></spine>
+<guide>
+<reference type="cover" title="Cover" href="CoverG1441rigorMalogrigormalogmailcom.xhtml"/>
+<reference type="text" title="Title" href="02_TitleGrigorMalogr1396igormalogmailcom.xhtml"/>
+<reference type="toc" title="Table of Contents" href="04_ContentsGri1984gorMalogrigormalogmailcom.xhtml"/>
+</guide>
+</package>
