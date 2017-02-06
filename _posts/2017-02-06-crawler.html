@@ -1,0 +1,89 @@
+---
+category: interactive
+layout: post
+title: "Viza-viza"
+excerpt: "Animacion interaktiv i bërë me p5.js"
+lang: sq
+image: /img/crawler.png
+---
+<p>Për tu punuar më tej.</p>
+<div id="sketch-holder"></div>
+<button id="play" class="custom-btn">Play</button>
+<button id="pause" class="custom-btn">Pause</button>
+<button id="save" class="custom-btn">Save image</button>
+<button id="clear" class="custom-btn">Clear</button>
+<button id="restart" class="custom-btn">Restart</button>
+
+<script>
+var cs = [];
+var nr = 9;
+function setup(){
+  var canvas = createCanvas(850, 450);
+  canvas.parent("sketch-holder");
+  background(20);
+  stroke(255);
+  strokeWeight(1);
+  for(var i=0; i<nr; i++){
+    cs.push( new Crawler(width/2, height/2) );
+  }
+}
+
+function draw(){
+  for (var i=0; i<cs.length; i++) {
+    cs[i].exist();
+  }
+}
+
+function Crawler(x, y){
+  this.p = createVector(x, y);
+  this.m = createVector( random(1)<0.5 ? 1 : -1, random(1)<0.5 ? 1 : -1 );
+
+  this.display = function(){
+    point(this.p.x, this.p.y);
+  }
+
+  this.move = function(){
+    this.p.add(this.m);
+  }
+
+  this.changeDirection = function(){
+    if (random(1)<0.1) {
+      var prob = random(1);
+
+      if (prob < 0.5) {
+        this.m.x *= -1;
+      } else {
+        this.m.y *= -1;
+      }
+    }
+  }
+
+  this.exist = function(){
+    this.display();
+    this.move();
+    this.changeDirection();
+  }
+}
+
+// interface
+$("#play").click(function(){
+  loop()
+});
+$("#pause").click(function(){
+  noLoop();
+});
+$("#save").click(function(){
+  saveCanvas(canvas, 'image', 'png');
+});
+$("#clear").click(function(){
+  background(20);
+});
+$("#restart").click(function(){
+  background(20);
+  for(var i=0; i<cs.length; i++){
+    cs[i].p.x = width/2;
+    cs[i].p.y = height/2;
+  }
+  loop();
+});
+</script>
