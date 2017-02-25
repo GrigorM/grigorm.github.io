@@ -6,21 +6,30 @@ excerpt: "Animacion interaktiv i bërë me p5.js"
 lang: sq
 image: /img/crawler.png
 ---
-<p>Për tu punuar më tej.</p>
+<p>Për tu zhvilluar më tej.</p>
 <div id="sketch-holder"></div>
 <button id="play" class="custom-btn">Play</button>
 <button id="pause" class="custom-btn">Pause</button>
+<button id="add" class="custom-btn">Add</button>
 <button id="save" class="custom-btn">Save image</button>
 <button id="clear" class="custom-btn">Clear</button>
 <button id="restart" class="custom-btn">Restart</button>
-
+<p id="sketch-modifiers">
+  <label for="bgColor">Change background color</label>
+  <input type="color" id="bgColor" class="pull-right"><br/>
+  <label for="strokeColor">Change stroke color</label>
+  <input type="color" id="strokeColor" class="pull-right">
+</p>
 <script>
 var cs = [];
-var nr = 9;
+var nr = 7;
+var addCrawler = false;
+var backgroundColor = "#141414";
+var strokeColor = "#fff";
 function setup(){
   var canvas = createCanvas(850, 450);
   canvas.parent("sketch-holder");
-  background(20);
+  background(backgroundColor);
   stroke(255);
   strokeWeight(1);
   for(var i=0; i<nr; i++){
@@ -31,6 +40,14 @@ function setup(){
 function draw(){
   for (var i=0; i<cs.length; i++) {
     cs[i].exist();
+  }
+}
+
+function mousePressed(){
+  if(addCrawler){
+    cs.push(new Crawler(mouseX, mouseY));
+    addCrawler = false;
+    $("#add").text("Add");
   }
 }
 
@@ -72,6 +89,15 @@ $("#play").click(function(){
 $("#pause").click(function(){
   noLoop();
 });
+$("#add").click(function(){
+  if($(this).text() == "Add"){
+    $(this).text("Click on the canvas");
+    addCrawler = true;
+  } else {
+    $(this).text("Add");
+    addCrawler = false;
+  }
+});
 $("#save").click(function(){
   saveCanvas(canvas, 'image', 'png');
 });
@@ -79,11 +105,21 @@ $("#clear").click(function(){
   background(20);
 });
 $("#restart").click(function(){
-  background(20);
+  background(backgroundColor);
+  stroke(strokeColor);
+  cs.splice(nr, cs.length - nr);
   for(var i=0; i<cs.length; i++){
     cs[i].p.x = width/2;
     cs[i].p.y = height/2;
   }
   loop();
 });
+$("#bgColor").change(function(){
+  backgroundColor = $(this).val();
+  $("#restart").click();
+});
+$("#strokeColor").change(function(){
+  strokeColor = $(this).val();
+  $("#restart").click();
+})
 </script>
