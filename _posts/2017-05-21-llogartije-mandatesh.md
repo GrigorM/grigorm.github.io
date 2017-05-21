@@ -12,11 +12,11 @@ Por ka diçka në keto sistemet zgjedhore, grafikët me rezultate, hartat, ndarj
 
 ### Sistemi zgjedhor në Shqipëri
 
-Ne Shqipëri zbatohet një sistem zgjedhor i quajtur proporcional rajonal. Partitë ose koalicionet masin forcat e tyre në 12 qarqe të vendit, ku secili qark ka një numër të caktuar deputetësh në bazë të popullsisë. Deputetët shpërndahen ndermejt partive ose koalicioneve permes [formules D'Hondt](https://en.wikipedia.org/wiki/D%27Hondt_method){:target="_blank_"}, me një prag 3% për partitë dhe 5% për koalicionet. Sistemi është ndërtuar në mënyrë të tillë që të favorizojë partitë dhe koalicionet e mëdha, ku ndarja në qarqe dhe formula e shpërndarjes së mandateve bëjnë që shumë vota për partitë e vogla të shkojnë dëm. Kjo vihet re sidomos në qarqet me numër të vogel deputetësh, ku partitë me pak vota jo vetëm që nuk arrijnë të marrin mandate, por votat e tyre në keto qarqe jane praktikisht të pavlefshme. Kjo nxit një organizim rreth 2 grupimeve të medha dhe dekurajon partitë e vogla nga të dalurit vetëm në zgjedhje.
+Ne Shqipëri zbatohet një sistem zgjedhor i quajtur proporcional rajonal. Partitë ose koalicionet masin forcat e tyre në 12 qarqe të vendit, ku secili qark ka një numër të caktuar deputetësh në bazë të popullsisë. Deputetët shpërndahen ndërmejt partive ose koalicioneve përmes [formules D'Hondt](https://en.wikipedia.org/wiki/D%27Hondt_method){:target="_blank_"}, me një prag 3% për partitë dhe 5% për koalicionet. Sistemi është ndërtuar në mënyrë të tillë që të favorizojë partitë dhe koalicionet e mëdha, ku ndarja në qarqe dhe formula e shpërndarjes së mandateve bëjnë që shumë vota për partitë e vogla të shkojnë dëm. Kjo vihet re sidomos në qarqet me numër të vogel deputetësh, ku partitë me pak vota jo vetëm që nuk arrijnë të marrin mandate, por votat e tyre në keto qarqe jane praktikisht të pavlefshme. Kjo nxit një organizim rreth grupimeve të medha dhe dekurajon partitë e vogla nga të dalurit vetëm në zgjedhje.
 
 ### Metoda D'Hondt
 
-Metoda D'Hondt bën alokimin e mandateve partive sipas numrit të votave të marra. Shpërndarja fillon duke i dhënë mandatin e parë partisë me më shumë vota. Pasi një parti merr një mandat, numri i votave të saj pjestohet me numrin e mandateve që ka marrë deri tani plus 1, dhe rishikohet se cila parti ka tani numrin më të madh të votave për të marre mandatin e rradhës. Formula përsëritet deri sa të shpërndahen të gjitha mandatet. Për një shembull konkret ndiqni [lidhjen në Wikipedia](https://en.wikipedia.org/wiki/D%27Hondt_method#Allocation){:target="_blank_"}.
+Metoda D'Hondt bën alokimin e mandateve partive sipas numrit të votave të marra. Shpërndarja fillon duke i dhënë mandatin e parë partisë me më shumë vota. Pasi një parti merr një mandat, numri total i votave të saj pjestohet me numrin e mandateve që ka marrë deri në këtë çast plus 1, dhe rishikohet se cila parti ka tani numrin më të madh të votave për të marre mandatin e rradhës. Formula përsëritet deri sa të shpërndahen të gjitha mandatet. Për një shembull konkret ndiqni [lidhjen në Wikipedia](https://en.wikipedia.org/wiki/D%27Hondt_method#Allocation){:target="_blank_"}.
 
 ### Projektimi i mandateve sipas votave të 2013
 
@@ -63,7 +63,7 @@ Funksioni merr 2 argumenta:
 ```
 2. nrMandateve - numri i mandateve për atë qark
 
-dhe kthen objektin e kaluar të pasuruar me fusha për numrin e mandateve në formën:
+dhe kthen objektin e kaluar, të pasuruar me fusha për numrin e mandateve në formën:
 ``` javascript
 {
   "Partia 1": {
