@@ -722,6 +722,6 @@ span#all:hover, span.category-link:hover { text-decoration:underline; color: #b7
   font-weight: normal;
 }
 
-/*pre code {
+pre code {
   font-size: smaller;
-}*/
+}
