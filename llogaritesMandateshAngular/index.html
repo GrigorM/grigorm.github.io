@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Llogarites mandatesh</title>
+    <script src="https://code.angularjs.org/1.5.8/angular.min.js"></script>
+    <!-- <script src="https://code.angularjs.org/1.5.8-rc.1/angular-route.min.js"></script> -->
+    <script src="app.js"></script>
+    <script src="data.js"></script>
+  </head>
+  <body>
+    <div ng-controller="mainController">
+      <!-- <div ng-repeat="n in nums">
+        <input type="number" ng-model="n.val" ng-change="calculatePercentage()"> => <span>{{ n.per }}</span>
+        <br/>
+      </div> -->
+
+
+      <div ng-repeat="(city, info) in data">
+        <h1 style="text-transform: capitalize;">{{ city }}</h1>
+        <p ng-repeat="(parti, vota) in info.rezultate">
+          <span>{{parti}}</span>:
+            <input type="number" step="100" ng-model="vota.vota" ng-change="llogaritDeputetet(info.rezultate, info.mandate)"/>
+            <span>Diferenca: {{ vota.vota - vota.votaFillestare }}</span>
+            <span>{{ vota.mandate }} mandate</span>
+        </p>
+      </div>
+
+      <!-- <div ng-repeat="(p, v) in data">
+        {{ p }}: <input type="number" ng-model="v.vota" ng-change="llogaritDeputetet(data, 7)"> => <span>{{ v.mandate }}</span>
+      </div> -->
+
+    </div>
+  </body>
+</html>
