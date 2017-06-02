@@ -1,0 +1,47 @@
+html, body {
+  margin: 0;
+}
+* {
+  font-family: monospace;
+}
+nav.top{
+  position: fixed;
+  width: 97%;
+  top: 0;
+  height: 17px;
+  padding: 20px;
+  background-color: #4e4e4e;
+}
+.totali {
+  display: inline-block;
+  float: right;
+}
+.totali .emri-partise {
+  margin-left: 15px;
+  color: white;
+}
+.totali .mandate-total {
+  margin-right: 15px;
+  color: white;
+}
+
+.content {
+  margin-top: 50px;
+  padding: 20px;
+  background: lightgray;
+}
+.partia {
+  width: 50px;
+  display: inline-block;
+}
+
+.diferenca {
+  margin-right: 20px;
+  display: inline-block;
+}
+.diferenca.red span{
+  color: red
+}
+.diferenca.green span{
+  color: green
+}

@@ -166,29 +166,29 @@ var gjirokaster = {
     vota: 1872
   }
 };
-var total = {
-  "PS": {
-    vota: 713407
-  },
-  "PD": {
-    vota: 528373
-  },
-  "LSI": {
-    vota: 180470
-  },
-  "PR": {
-    vota: 52168
-  },
-  "PDIU": {
-    vota: 44957
-  },
-  "PBDNJ": {
-    vota: 14722
-  },
-  "PDK": {
-    vota: 13288
-  }
-};
+// var total = {
+//   "PS": {
+//     vota: 713407
+//   },
+//   "PD": {
+//     vota: 528373
+//   },
+//   "LSI": {
+//     vota: 180470
+//   },
+//   "PR": {
+//     vota: 52168
+//   },
+//   "PDIU": {
+//     vota: 44957
+//   },
+//   "PBDNJ": {
+//     vota: 14722
+//   },
+//   "PDK": {
+//     vota: 13288
+//   }
+// };
 
 var data = {};
 data.shkoder = {};

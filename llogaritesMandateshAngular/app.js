@@ -2,32 +2,39 @@ var app = angular.module('app', []);
 
 app.controller('mainController', ['$scope',
   function($scope){
-    // for(var city in data){
-    //   data[city] = llogaritDeputetet(data[city], )
-    // }
     $scope.data = data;
+    $scope.total = {};
 
     $scope.llogaritDeputetet = function(votat, nrMandateve){
       var temp = JSON.parse(JSON.stringify(votat));
-      // inicializo mandatet
       for(var parti in votat){
         votat[parti].mandate = 0;
       }
-      // shpërnda mandatet mes partive
       while (nrMandateve > 0){
-        // llogarit se kujt i takon mandati, pra cila parti ka me shumë vota
         var partia = Object.keys(temp).reduce(function(a, b){ return temp[a].vota > temp[b].vota ? a : b });
-        // shto një mandat partise
         votat[partia].mandate++;
-        // pjesto numrin total të votave të partise me mandatet + 1
         temp[partia].vota = votat[partia].vota / (votat[partia].mandate + 1);
         nrMandateve--;
       }
-      // printo numrin e mandateve për cdo parti
-      for(var parti in votat){
-        // console.log(parti+": "+votat[parti].mandate+" mandate");
+      llogaritTotalin();
+    }
+
+    function llogaritTotalin(){
+      $scope.total = {};
+      for( var city in data ){
+        for( parti in data[city].rezultate ){
+          if(data[city].rezultate[parti].mandate > 0){
+            if($scope.total[parti] === undefined){
+              $scope.total[parti] = data[city].rezultate[parti].mandate;
+            }
+            else {
+              $scope.total[parti] += data[city].rezultate[parti].mandate;
+            }
+          }
+        }
       }
     }
+    llogaritTotalin();
     // $scope.llogaritDeputetet($scope.data, 7);
 
     // $scope.nums = [{val: 5, per: 0}, {val: 15, per: 0}, {val: 10, per: 0}];
