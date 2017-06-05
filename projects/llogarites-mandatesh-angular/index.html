@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Llogarites mandatesh</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" charset="utf-8"> -->
+    <link rel="stylesheet" href="app.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://code.angularjs.org/1.5.8/angular.min.js"></script>
+    <!-- <script src="https://code.angularjs.org/1.5.8-rc.1/angular-route.min.js"></script> -->
+    <script src="app.js"></script>
+    <script src="data.js"></script>
+  </head>
+  <body>
+    <div ng-controller="mainController">
+      <!-- <div ng-repeat="n in nums">
+        <input type="number" ng-model="n.val" ng-change="calculatePercentage()"> => <span>{{ n.per }}</span>
+        <br/>
+      </div> -->
+      <nav class="top">
+        <div class="title">
+          Llogaritës mandatesh
+        </div>
+        <div class="totali" ng-repeat="(parti, mandate) in total">
+          <span class="emri-partise">{{ parti }}</span> <span class="mandate-total">{{ mandate }}</span>
+        </div>
+      </nav>
+
+    <div class="content">
+      <span style="font-size:11px">*Vlerat fillestare janë votat nga zgjedhjet e përgjithshme 2013*</span>
+      <div ng-repeat="(city, info) in data">
+        <h2 style="text-transform: capitalize;">{{ city }}</h2>
+        <div ng-repeat="(parti, vota) in info.rezultate">
+            <div class="partia">{{parti}}</div>:
+            <input type="number" step="100" min="0" ng-model="vota.vota" ng-change="llogaritDeputetet(info.rezultate, info.mandate)"/>
+            <div class="diferenca" ng-class="{ 'green': (vota.vota - vota.votaFillestare > 0), 'red': (vota.vota - vota.votaFillestare < 0) }">Diferenca: <span ng-if="vota.vota - vota.votaFillestare > 0">+</span><span>{{ vota.vota - vota.votaFillestare }}</span></div>
+            <span>{{ vota.mandate }} mandate</span>
+        </div>
+        <button type="button" class="add-party" ng-click="addParty(city)">Shto parti</button>
+        <hr>
+      </div>
+    </div>
+
+
+      <!-- <div ng-repeat="(p, v) in data">
+        {{ p }}: <input type="number" ng-model="v.vota" ng-change="llogaritDeputetet(data, 7)"> => <span>{{ v.mandate }}</span>
+      </div> -->
+
+    </div>
+  </body>
+</html>
