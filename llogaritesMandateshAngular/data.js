@@ -191,24 +191,24 @@ var gjirokaster = {
 // };
 
 var data = {};
-data.shkoder = {};
-data.shkoder.mandate = 11;
-data.shkoder.rezultate = llogaritDeputetet(shkoder, data.shkoder.mandate);
-data.kukes = {};
-data.kukes.mandate = 3;
-data.kukes.rezultate = llogaritDeputetet(kukes, data.kukes.mandate);
-data.diber = {};
-data.diber.mandate = 6;
-data.diber.rezultate = llogaritDeputetet(diber, data.diber.mandate);
-data.lezhe = {};
-data.lezhe.mandate = 7;
-data.lezhe.rezultate = llogaritDeputetet(lezhe, data.lezhe.mandate);
-data.tirane = {};
-data.tirane.mandate = 34;
-data.tirane.rezultate = llogaritDeputetet(tirane, data.tirane.mandate);
-data.durres = {};
-data.durres.mandate = 14;
-data.durres.rezultate = llogaritDeputetet(durres, data.durres.mandate);
+data.shkodër = {};
+data.shkodër.mandate = 11;
+data.shkodër.rezultate = llogaritDeputetet(shkoder, data.shkodër.mandate);
+data.kukës = {};
+data.kukës.mandate = 3;
+data.kukës.rezultate = llogaritDeputetet(kukes, data.kukës.mandate);
+data.dibër = {};
+data.dibër.mandate = 6;
+data.dibër.rezultate = llogaritDeputetet(diber, data.dibër.mandate);
+data.lezhë = {};
+data.lezhë.mandate = 7;
+data.lezhë.rezultate = llogaritDeputetet(lezhe, data.lezhë.mandate);
+data.tiranë = {};
+data.tiranë.mandate = 34;
+data.tiranë.rezultate = llogaritDeputetet(tirane, data.tiranë.mandate);
+data.durrës = {};
+data.durrës.mandate = 14;
+data.durrës.rezultate = llogaritDeputetet(durres, data.durrës.mandate);
 data.elbasan = {};
 data.elbasan.mandate = 14;
 data.elbasan.rezultate = llogaritDeputetet(elbasan, data.elbasan.mandate);
@@ -218,67 +218,18 @@ data.fier.rezultate = llogaritDeputetet(fier, data.fier.mandate);
 data.berat = {};
 data.berat.mandate = 7;
 data.berat.rezultate = llogaritDeputetet(berat, data.berat.mandate);
-data.vlore = {};
-data.vlore.mandate = 12;
-data.vlore.rezultate = llogaritDeputetet(vlore, data.vlore.mandate);
-data.korce = {};
-data.korce.mandate = 11;
-data.korce.rezultate = llogaritDeputetet(korce, data.korce.mandate);
-data.gjirokaster = {};
-data.gjirokaster.mandate = 5;
-data.gjirokaster.rezultate = llogaritDeputetet(gjirokaster, data.gjirokaster.mandate);
+data.vlorë = {};
+data.vlorë.mandate = 12;
+data.vlorë.rezultate = llogaritDeputetet(vlore, data.vlorë.mandate);
+data.korçë = {};
+data.korçë.mandate = 11;
+data.korçë.rezultate = llogaritDeputetet(korce, data.korçë.mandate);
+data.gjirokastër = {};
+data.gjirokastër.mandate = 5;
+data.gjirokastër.rezultate = llogaritDeputetet(gjirokaster, data.gjirokastër.mandate);
 
 for( var city in data ){
   for( parti in data[city].rezultate ){
     data[city].rezultate[parti].votaFillestare = data[city].rezultate[parti].vota;
   }
-}
-
-// var d = {};
-// var test = {
-//   "A": {
-//     vota: 63584
-//   },
-//   "B": {
-//     vota: 47061
-//   },
-//   "C": {
-//     vota: 14416
-//   }
-// };
-
-// data.push(shkoder);
-// data.push(kukes);
-// data.push(diber);
-// data.push(lezhe);
-// data.push(tirane);
-// data.push(durres);
-// data.push(elbasan);
-// data.push(fier);
-// data.push(berat);
-// data.push(vlore);
-// data.push(korce);
-// data.push(gjirokaster);
-function llogaritDeputetet( votat, nrMandateve ){
-  // ruajme një kopje të objektit votat, për ta perdorur për llogaritje
-  var temp = JSON.parse(JSON.stringify(votat));
-  // inicializo mandatet
-  for(var parti in votat){
-    votat[parti].mandate = 0;
-  }
-  // shpërnda mandatet mes partive
-  while (nrMandateve > 0){
-    // llogarit se kujt i takon mandati, pra cila parti ka me shumë vota
-    var partia = Object.keys(temp).reduce(function(a, b){ return temp[a].vota > temp[b].vota ? a : b });
-    // shto një mandat partise
-    votat[partia].mandate++;
-    // pjesto numrin total të votave të partise me mandatet + 1
-    temp[partia].vota = votat[partia].vota / (votat[partia].mandate + 1);
-    nrMandateve--;
-  }
-  // printo numrin e mandateve për cdo parti
-  for(var parti in votat){
-    // console.log(parti+": "+votat[parti].mandate+" mandate");
-  }
-  return votat;
 }

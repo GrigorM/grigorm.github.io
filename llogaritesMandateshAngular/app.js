@@ -35,6 +35,16 @@ app.controller('mainController', ['$scope',
       }
     }
     llogaritTotalin();
+
+
+    $scope.addParty = function(city){
+      var party = prompt("Emri i partise");
+      var votes = parseInt(prompt("Numri i votave"));
+      if( party && votes ){
+        $scope.data[city].rezultate[party] = { vota:votes, votaFillestare:0, mandate: 0};
+        $scope.llogaritDeputetet($scope.data[city].rezultate, $scope.data[city].mandate);
+      }
+    };
     // $scope.llogaritDeputetet($scope.data, 7);
 
     // $scope.nums = [{val: 5, per: 0}, {val: 15, per: 0}, {val: 10, per: 0}];

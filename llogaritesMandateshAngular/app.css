@@ -6,15 +6,23 @@ html, body {
 }
 nav.top{
   position: fixed;
-  width: 97%;
+  width: 100%;
   top: 0;
   height: 17px;
   padding: 20px;
   background-color: #4e4e4e;
+  text-align: right;
+}
+.title {
+  float: left;
+  color: #fff;
+  font-size: 16px;
 }
 .totali {
   display: inline-block;
-  float: right;
+}
+.totali:last-of-type{
+  margin-right: 50px;
 }
 .totali .emri-partise {
   margin-left: 15px;
@@ -44,4 +52,7 @@ nav.top{
 }
 .diferenca.green span{
   color: green
+}
+.add-party{
+  margin-top: 10px;
 }

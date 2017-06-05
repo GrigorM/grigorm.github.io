@@ -17,20 +17,25 @@
         <br/>
       </div> -->
       <nav class="top">
+        <div class="title">
+          Llogaritës mandatesh
+        </div>
         <div class="totali" ng-repeat="(parti, mandate) in total">
           <span class="emri-partise">{{ parti }}</span> <span class="mandate-total">{{ mandate }}</span>
         </div>
       </nav>
 
     <div class="content">
+      <span style="font-size:11px">*Vlerat fillestare janë votat nga zgjedhjet e përgjithshme 2013*</span>
       <div ng-repeat="(city, info) in data">
         <h2 style="text-transform: capitalize;">{{ city }}</h2>
         <div ng-repeat="(parti, vota) in info.rezultate">
             <div class="partia">{{parti}}</div>:
             <input type="number" step="100" min="0" ng-model="vota.vota" ng-change="llogaritDeputetet(info.rezultate, info.mandate)"/>
-            <div class="diferenca" ng-class="{ 'green': (vota.vota - vota.votaFillestare > 0), 'red': (vota.vota - vota.votaFillestare < 0) }">Diferenca: <span>{{ vota.vota - vota.votaFillestare }}</span></div>
+            <div class="diferenca" ng-class="{ 'green': (vota.vota - vota.votaFillestare > 0), 'red': (vota.vota - vota.votaFillestare < 0) }">Diferenca: <span ng-if="vota.vota - vota.votaFillestare > 0">+</span><span>{{ vota.vota - vota.votaFillestare }}</span></div>
             <span>{{ vota.mandate }} mandate</span>
         </div>
+        <button type="button" class="add-party" ng-click="addParty(city)">Shto parti</button>
         <hr>
       </div>
     </div>
