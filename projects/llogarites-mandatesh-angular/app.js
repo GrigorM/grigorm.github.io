@@ -8,6 +8,9 @@ app.controller('mainController', ['$scope',
     $scope.llogaritDeputetet = function(votat, nrMandateve){
       var temp = JSON.parse(JSON.stringify(votat));
       for(var parti in votat){
+        if( nrMandateve==34 && votat[parti].vota < 13000 ){
+          delete temp[parti];
+        }
         votat[parti].mandate = 0;
       }
       while (nrMandateve > 0){
@@ -45,21 +48,6 @@ app.controller('mainController', ['$scope',
         $scope.llogaritDeputetet($scope.data[city].rezultate, $scope.data[city].mandate);
       }
     };
-    // $scope.llogaritDeputetet($scope.data, 7);
-
-    // $scope.nums = [{val: 5, per: 0}, {val: 15, per: 0}, {val: 10, per: 0}];
-    //
-    // $scope.calculatePercentage = function(){
-    //   var sum = 0;
-    //   for( var i=0;i<$scope.nums.length; i++ ){
-    //     sum += $scope.nums[i].val;
-    //   }
-    //   for( var i=0;i<$scope.nums.length; i++ ){
-    //     $scope.nums[i].per = ($scope.nums[i].val/sum)*100;
-    //   }
-    //   // return num/(sum) * 100;
-    // }
-    // $scope.calculatePercentage();
 
   }
 ]);

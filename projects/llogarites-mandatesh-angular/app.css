@@ -11,25 +11,32 @@ nav.top{
   height: 17px;
   padding: 20px;
   background-color: #4e4e4e;
-  text-align: right;
+  /*text-align: right;*/
 }
 .title {
-  float: left;
+  /*float: left;*/
   color: #fff;
   font-size: 16px;
-}
-.totali {
+  width: 49%;
   display: inline-block;
 }
-.totali:last-of-type{
+.total{
+  text-align: right;
+  width: 49%;
+  display: inline-block;
+}
+.totali-parti {
+  display: inline-block;
+}
+.totali-parti:last-of-type{
   margin-right: 50px;
 }
-.totali .emri-partise {
-  margin-left: 15px;
+.totali-parti .emri-partise {
+  margin-left: 0px;
   color: white;
 }
-.totali .mandate-total {
-  margin-right: 15px;
+.totali-parti .mandate-total {
+  margin-right: 30px;
   color: white;
 }
 
@@ -55,10 +62,32 @@ nav.top{
 }
 .add-party{
   margin-top: 10px;
+  border-radius: 0px;
 }
 .ng-pristine {
   box-shadow: none;
 }
 input{
   border-radius: 0;
+}
+@media ( max-width: 770px ){
+  .content {
+    margin-top: 90px;
+  }
+  nav.top{
+    height: 50px;
+  }
+  .title{
+    width: 100%;
+    display: block;
+  }
+  .total{
+    width: 100%;
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+  }
+  .total-parti .emri-partise:first-of-type{
+    padding-left: 0;
+  }
 }
