@@ -56,3 +56,6 @@ nav.top{
 .add-party{
   margin-top: 10px;
 }
+.ng-pristine {
+  box-shadow: none;
+}

@@ -39,7 +39,6 @@ app.controller('mainController', ['$scope',
     }
     llogaritTotalin();
 
-
     $scope.addParty = function(city){
       var party = prompt("Emri i partise");
       var votes = parseInt(prompt("Numri i votave"));

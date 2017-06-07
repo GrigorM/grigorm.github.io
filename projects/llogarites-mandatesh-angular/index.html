@@ -4,7 +4,7 @@
     <meta charset="utf-8">
         <meta property="og:image" content="https://grigorm.github.io/img/mandate.png">
     <title>Llogarites mandatesh</title>
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" charset="utf-8"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" charset="utf-8">
     <link rel="stylesheet" href="app.css" media="screen" title="no title" charset="utf-8">
     <script src="https://code.angularjs.org/1.5.8/angular.min.js"></script>
     <!-- <script src="https://code.angularjs.org/1.5.8-rc.1/angular-route.min.js"></script> -->
@@ -19,7 +19,7 @@
       </div> -->
       <nav class="top">
         <div class="title">
-          Llogaritës mandatesh
+          <h3>Llogaritës mandatesh</h3>
         </div>
         <div class="total">
           <div class="totali-parti" ng-repeat="(parti, mandate) in total">
@@ -29,15 +29,17 @@
 
       </nav>
 
-    <div class="content">
+    <div class="content container">
       <span style="font-size:11px">*Vlerat fillestare janë votat nga zgjedhjet e përgjithshme 2013, dhe janë pasqyruar vetëm partitë që kanë kaluar pragun e 3%*</span>
       <div ng-repeat="(city, info) in data">
-        <h2 style="text-transform: capitalize;">{{ city }}</h2>
-        <div ng-repeat="(parti, vota) in info.rezultate" class=>
-            <div class="partia">{{parti}}</div>:
-            <input type="number" step="100" min="0" ng-model="vota.vota" ng-change="llogaritDeputetet(info.rezultate, info.mandate)"/>
-            <div class="diferenca" ng-class="{ 'green': (vota.vota - vota.votaFillestare > 0), 'red': (vota.vota - vota.votaFillestare < 0) }">Diferenca: <span ng-if="vota.vota - vota.votaFillestare > 0">+</span><span>{{ vota.vota - vota.votaFillestare }}</span></div>
-            <span>{{ vota.mandate }} mandate</span>
+        <h3 class="city">{{ city }}</h3>
+        <div ng-repeat="(parti, vota) in info.rezultate" class="col-sm-12 party-row">
+            <div class="col-sm-1 partia">{{parti}}:</div>
+            <input class="col-sm-2" type="number" step="100" min="0" ng-model="vota.vota" ng-change="llogaritDeputetet(info.rezultate, info.mandate)"/>
+            <div class="col-sm-offset-1 col-sm-6">
+              <div class="diferenca" ng-class="{ 'green': (vota.vota - vota.votaFillestare > 0), 'red': (vota.vota - vota.votaFillestare < 0) }">Diferenca: <span ng-if="vota.vota - vota.votaFillestare > 0">+</span><span>{{ vota.vota - vota.votaFillestare }}</span></div>
+              <span>{{ vota.mandate }} mandat<span ng-if="vota.mandate != 1">e</span></span>
+            </div>
         </div>
         <button type="button" class="add-party" ng-click="addParty(city)">Shto parti</button>
         <hr>
