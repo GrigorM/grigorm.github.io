@@ -29,6 +29,8 @@ Nga ana teknike, aplikacioni është ndërtuar me angularjs, që e bën lidhjen 
 ```
 {% endraw %}
 
-Ndërfaqja mund të aksesohet në [këtë lidhje](https://grigorm.github.io/projects/llogarites-mandatesh-angular/){:target="_blank_"} ose duke klikuar në imazhin më poshtë. Hape, luaj, dhe ndjehu si në shtabin qendror të një partie :p
+Pas çdo ndryshimi vlerash rillogariten mandatet për atë qytet dhe nderfaqja përditësohet automatikisht.  
+
+Aplikacioni mund të aksesohet në [këtë lidhje](https://grigorm.github.io/projects/llogarites-mandatesh-angular/){:target="_blank_"} ose duke klikuar në imazhin më poshtë. Hape, luaj, dhe ndjehu si në shtabin qendror të një partie :p
 
 [![llogaritës mandatesh](/img/mandate-2.png)](https://grigorm.github.io/projects/llogarites-mandatesh-angular/)
