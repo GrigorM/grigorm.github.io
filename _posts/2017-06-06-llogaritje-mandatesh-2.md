@@ -34,3 +34,7 @@ Pas çdo ndryshimi vlerash rillogariten mandatet për atë qytet dhe nderfaqja p
 Aplikacioni mund të aksesohet në [këtë lidhje](https://grigorm.github.io/projects/llogarites-mandatesh-angular/){:target="_blank_"} ose duke klikuar në imazhin më poshtë. Hape, luaj, dhe ndjehu si në shtabin qendror të një partie :p
 
 [![llogaritës mandatesh](/img/mandate-2.png)](https://grigorm.github.io/projects/llogarites-mandatesh-angular/)
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
