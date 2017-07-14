@@ -1,7 +1,7 @@
 ---
 category: interactive
 layout: post
-title: "Viza-viza"
+title: ""
 excerpt: "Animacion interaktiv i bërë me p5.js"
 lang: sq
 image: /img/crawler.png
@@ -19,6 +19,7 @@ image: /img/crawler.png
   <input type="color" id="bgColor" class="pull-right"><br/>
   <label for="strokeColor">Change stroke color</label>
   <input type="color" id="strokeColor" class="pull-right">
+  <input type="file" id="upload" accept="image/*"> <!-- .jpg, .jpeg, .png, .bmp, .gif-->
 </p>
 <script>
 var cs = [];
@@ -26,20 +27,32 @@ var nr = 7;
 var addCrawler = false;
 var backgroundColor = "#141414";
 var strokeColor = "#fff";
+var imgMode = false;
+var img, img2;
+
 function setup(){
   var canvas = createCanvas(850, 450);
   canvas.parent("sketch-holder");
   background(backgroundColor);
-  stroke(255);
+  stroke(strokeColor);
   strokeWeight(1);
   for(var i=0; i<nr; i++){
     cs.push( new Crawler(width/2, height/2) );
   }
+  img2 = loadImage("/img/amsl.jpg");
 }
 
 function draw(){
+  if( imgMode ){
+    loadPixels();
+    img.loadPixels();
+  }
   for (var i=0; i<cs.length; i++) {
     cs[i].exist();
+  }
+  if( imgMode ){
+    updatePixels();
+    img.updatePixels();
   }
 }
 
@@ -49,6 +62,11 @@ function mousePressed(){
     addCrawler = false;
     $("#add").text("Add");
   }
+  if( imgMode ){
+    for (var i=0; i<nr; i++) {
+      cs[i] = new Crawler(mouseX, mouseY);
+    }
+  }
 }
 
 function Crawler(x, y){
@@ -56,7 +74,26 @@ function Crawler(x, y){
   this.m = createVector( random(1)<0.5 ? 1 : -1, random(1)<0.5 ? 1 : -1 );
 
   this.display = function(){
-    point(this.p.x, this.p.y);
+    if( imgMode && img !== undefined ){
+      console.log("drawing");
+        if ( !(this.p.x >= width || this.p.x < 0 || this.p.y >= height || this.p.y < 0) ) {
+          var rImg = img.pixels[int(this.p.y*img.width + this.p.x)*4];
+          var gImg = img.pixels[int(this.p.y*img.width + this.p.x)*4 + 1];
+          var bImg = img.pixels[int(this.p.y*img.width + this.p.x)*4 + 2];
+
+          var rCnv = pixels[int(this.p.y*img.width + this.p.x)*4];
+          var gCnv = pixels[int(this.p.y*img.width + this.p.x)*4 + 1];
+          var bCnv = pixels[int(this.p.y*img.width + this.p.x)*4 + 2];
+          if ( !(rImg == rCnv && gImg == gCnv && bImg == bCnv) ) { //pixels[int(this.p.y*width + this.p.x)] != c
+            // pixels[int(this.p.y*width + this.p.x)] = c;
+            pixels[int(this.p.y*img.width + this.p.x)*4] = rImg;
+            pixels[int(this.p.y*img.width + this.p.x)*4 + 1] = gImg;
+            pixels[int(this.p.y*img.width + this.p.x)*4 + 2] = bImg;
+          }
+        }
+    } else {
+      point(this.p.x, this.p.y);
+    }
   }
 
   this.move = function(){
@@ -121,5 +158,34 @@ $("#bgColor").change(function(){
 $("#strokeColor").change(function(){
   strokeColor = $(this).val();
   $("#restart").click();
-})
+});
+
+var reader  = new FileReader();
+reader.addEventListener("load", function () {
+  img = loadImage(reader.result); //.hide();
+  setTimeout(function(){
+    // console.log(img.elt.width, img.elt.height);
+    resizeCanvas(img.width, img.height);
+    background(backgroundColor);
+    imgMode = true;
+    //  image(img, 0, 0);
+    //  noLoop();
+  }, 200);
+  // noLoop();
+
+  // preview.src = reader.result;
+}, false);
+
+$("#upload").change(function(data){
+  if( $("#upload").val() !== "" ){
+    reader.readAsDataURL(this.files[0]);
+    // var img = createImg(this.files[0].data)
+    // imgMode = true;
+    // img = create( data );
+    // image(img, 0, 0);
+  }
+  // console.log($("#upload").val());
+});
+// remove file
+// $("#upload").val("");
 </script>
