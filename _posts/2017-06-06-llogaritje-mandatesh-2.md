@@ -1,5 +1,5 @@
 ---
-category: essay
+category: llogarites-mandatesh
 layout: post
 title: "Aplikacion interaktiv për llogaritjen e mandateve parlamentare në bazë të votave"
 excerpt: "Çdo kotësi meriton një 'aplikacion interaktiv'"

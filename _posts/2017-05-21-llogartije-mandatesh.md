@@ -1,5 +1,5 @@
 ---
-category: essay
+category: [essay, llogarites-mandatesh]
 layout: post
 title: "Projektim i mandateve për zgjedhjet e 2017 sipas votave të 2013"
 excerpt: "Llogartije joqenësore të numrit te hajdutëve për parti që pritet të kemi në parlament"
