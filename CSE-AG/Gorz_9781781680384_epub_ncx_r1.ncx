@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en-US">
+	<head>
+		<meta name="dtb:uid" content="978-1-78168-038-4"/>
+		<meta name="dtb:depth" content="2"/>
+		<meta name="dtb:totalPageCount" content="0"/>
+		<meta name="dtb:maxPageNumber" content="0"/>
+	</head>
+	<docTitle><text>Capitalism, Socialism, Ecology</text></docTitle>
+	<docAuthor><text>Andre Gorz</text></docAuthor>
+	<navMap>
+		<navPoint class="cover" id="cvi" playOrder="1">
+			<navLabel><text>Cover</text></navLabel>
+			<content src="OEBPS/Gorz_9781781680384_epub_cvi_r1GrigorMalogrigorma5225logmailcom.htm"/>
+		</navPoint>
+		<navPoint class="titlepage" id="tp" playOrder="2">
+			<navLabel><text>Title Page</text></navLabel>
+			<content src="OEBPS/Gorz_9781781680384_epub_tp_r1GrigorMalogrig6746ormalogmailcom.htm"/>
+		</navPoint>
+		<navPoint class="copyright" id="cop" playOrder="3">
+			<navLabel><text>Copyright</text></navLabel>
+			<content src="OEBPS/Gorz_9781781680384_epub_cop_r1Grigor4904Malogrigormalogmailcom.htm"/>
+		</navPoint>
+		<navPoint class="other" id="toc" playOrder="4">
+			<navLabel><text>Contents</text></navLabel>
+			<content src="OEBPS/Gorz_9781781680384_epub_toc_r1GrigorMalogrigormalogmail1863com.htm"/>
+		</navPoint>
+		<navPoint class="other" id="prf" playOrder="5">
+			<navLabel><text>Preface</text></navLabel>
+			<content src="OEBPS/Gorz_9781781680384_epub_prf_r1GrigorMalogrigor4395malogmailcom.htm"/>
+		</navPoint>
+		<navPoint class="other" id="c01" playOrder="6">
+			<navLabel><text>1. Disorientations, Orientations: In Defence of Modernity</text></navLabel>
+			<content src="OEBPS/Gorz_9781781680384_epub_c01_r1GrigorMalogrigormalogmailc4936om.htm"/>
+		</navPoint>
+		<navPoint class="other" id="c02" playOrder="7">
+			<navLabel><text>2. A Left in Need of Redefinition</text></navLabel>
+			<content src="OEBPS/Gorz_9781781680384_epub_c02_r1Grigo4358rMalogrigormalogmailcom.htm"/>
+		</navPoint>
+		<navPoint class="other" id="c03" playOrder="8">
+			<navLabel><text>3. Capitalism, Socialism, Ecology</text></navLabel>
+			<content src="OEBPS/Gorz_9781781680384_epub_c03_r1GrigorMalo8744grigormalogmailcom.htm"/>
+		</navPoint>
+		<navPoint class="other" id="c04" playOrder="9">
+			<navLabel><text>4. Redefining Socialism</text></navLabel>
+			<content src="OEBPS/Gorz_9781781680384_epub_c04_r1GrigorMalogri2078gormalogmailcom.htm"/>
+		</navPoint>
+		<navPoint class="other" id="c05" playOrder="10">
+			<navLabel><text>5. The New Servants</text></navLabel>
+			<content src="OEBPS/Gorz_9781781680384_epub_c05_r1GrigorMa3613logrigormalogmailcom.htm"/>
+		</navPoint>
+		<navPoint class="other" id="c06" playOrder="11">
+			<navLabel><text>6. The Crisis of “Work” and the Post-Industrial Left</text></navLabel>
+			<content src="OEBPS/Gorz_9781781680384_epub_c06_r1Grigor4968Malogrigormalogmailcom.htm"/>
+		</navPoint>
+		<navPoint class="other" id="c07" playOrder="12">
+			<navLabel><text>7. Old and New Actors in the Central Conflict</text></navLabel>
+			<content src="OEBPS/Gorz_9781781680384_epub_c07_r1GrigorMalogrigor4201malogmailcom.htm"/>
+		</navPoint>
+		<navPoint class="other" id="c08" playOrder="13">
+			<navLabel><text>8. Which Way is Left? Social Change in the Post-Industrial Age</text></navLabel>
+			<content src="OEBPS/Gorz_9781781680384_epub_c08_r13837GrigorMalogrigormalogmailcom.htm"/>
+		</navPoint>
+		<navPoint class="other" id="c09" playOrder="14">
+			<navLabel><text>9. Shorter Hours, Same Pay</text></navLabel>
+			<content src="OEBPS/Gorz_9781781680384_epub_c09_r1GrigorMalogrigormalogmail9410com.htm"/>
+		</navPoint>
+		<navPoint class="other" id="aft" playOrder="15">
+			<navLabel><text>Afterword: Will There Be a European Left? Theoretical and Political Queries Otto Kallscheuer</text></navLabel>
+			<content src="OEBPS/Gorz_9781781680384_epub_aft_r1GrigorMalogrigormalogmai4750lcom.htm"/>
+		</navPoint>
+		<navPoint class="other" id="ind" playOrder="16">
+			<navLabel><text>Index</text></navLabel>
+			<content src="OEBPS/Gorz_9781781680384_epub_ind_r1GrigorMalog4862rigormalogmailcom.htm"/>
+		</navPoint>
+	<navPoint playOrder="17" id="BooXtream"><navLabel><text>This eBook is licensed to Grigor Malo, grigormalo@gmail.com on 09/13/2018</text></navLabel><content src="disclaimerGrigo5684rMalogrigormalogmailcom.xhtml"/></navPoint></navMap>
+</ncx>

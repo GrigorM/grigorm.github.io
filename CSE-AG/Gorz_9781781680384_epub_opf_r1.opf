@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="PrimaryID">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+		<dc:title>Capitalism, Socialism, Ecology</dc:title>
+		<dc:language>en-US</dc:language>
+		<dc:identifier id="PrimaryID" opf:scheme="ISBN">978-1-78168-038-4</dc:identifier>
+		<dc:creator opf:role="aut" opf:file-as="Gorz, Andre">Andre Gorz</dc:creator>
+		<dc:publisher>Verso</dc:publisher>
+		<dc:date opf:event="publication">2014-08-26</dc:date>
+		<dc:rights>Copyright © 2012 by Verso</dc:rights>
+		<meta name="cover" content="cover-image"/>
+	</metadata>
+	<manifest>
+		<item id="ncx" href="Gorz_9781781680384_epub_ncx_r1.ncx" media-type="application/x-dtbncx+xml"/>
+		<item id="cvi" href="OEBPS/Gorz_9781781680384_epub_cvi_r1GrigorMalogrigorma5225logmailcom.htm" media-type="application/xhtml+xml"/>
+		<item id="tp" href="OEBPS/Gorz_9781781680384_epub_tp_r1GrigorMalogrig6746ormalogmailcom.htm" media-type="application/xhtml+xml"/>
+		<item id="cop" href="OEBPS/Gorz_9781781680384_epub_cop_r1Grigor4904Malogrigormalogmailcom.htm" media-type="application/xhtml+xml"/>
+		<item id="toc" href="OEBPS/Gorz_9781781680384_epub_toc_r1GrigorMalogrigormalogmail1863com.htm" media-type="application/xhtml+xml"/>
+		<item id="prf" href="OEBPS/Gorz_9781781680384_epub_prf_r1GrigorMalogrigor4395malogmailcom.htm" media-type="application/xhtml+xml"/>
+		<item id="c01" href="OEBPS/Gorz_9781781680384_epub_c01_r1GrigorMalogrigormalogmailc4936om.htm" media-type="application/xhtml+xml"/>
+		<item id="c02" href="OEBPS/Gorz_9781781680384_epub_c02_r1Grigo4358rMalogrigormalogmailcom.htm" media-type="application/xhtml+xml"/>
+		<item id="c03" href="OEBPS/Gorz_9781781680384_epub_c03_r1GrigorMalo8744grigormalogmailcom.htm" media-type="application/xhtml+xml"/>
+		<item id="c04" href="OEBPS/Gorz_9781781680384_epub_c04_r1GrigorMalogri2078gormalogmailcom.htm" media-type="application/xhtml+xml"/>
+		<item id="c05" href="OEBPS/Gorz_9781781680384_epub_c05_r1GrigorMa3613logrigormalogmailcom.htm" media-type="application/xhtml+xml"/>
+		<item id="c06" href="OEBPS/Gorz_9781781680384_epub_c06_r1Grigor4968Malogrigormalogmailcom.htm" media-type="application/xhtml+xml"/>
+		<item id="c07" href="OEBPS/Gorz_9781781680384_epub_c07_r1GrigorMalogrigor4201malogmailcom.htm" media-type="application/xhtml+xml"/>
+		<item id="c08" href="OEBPS/Gorz_9781781680384_epub_c08_r13837GrigorMalogrigormalogmailcom.htm" media-type="application/xhtml+xml"/>
+		<item id="c09" href="OEBPS/Gorz_9781781680384_epub_c09_r1GrigorMalogrigormalogmail9410com.htm" media-type="application/xhtml+xml"/>
+		<item id="aft" href="OEBPS/Gorz_9781781680384_epub_aft_r1GrigorMalogrigormalogmai4750lcom.htm" media-type="application/xhtml+xml"/>
+		<item id="ind" href="OEBPS/Gorz_9781781680384_epub_ind_r1GrigorMalog4862rigormalogmailcom.htm" media-type="application/xhtml+xml"/>
+		<item id="bm2" href="OEBPS/Gorz_9781781680384_epub_bm2_r1GrigorMalogrigormalogmailcom9475.htm" media-type="application/xhtml+xml"/>
+		<item id="css" href="OEBPS/Gorz_9781781680384_epub_css_r1Grigo2143rMalogrigormalogmailcom.css" media-type="text/css"/>
+		<item id="f001" href="OEBPS/images/Gorz_9781781680384_epub_001_r1GrigorMalog643rigormalogmailcom.png" media-type="image/png"/>
+		<item id="cover-image" href="OEBPS/images/Gorz_9781781680384_epub_cvi_r1GrigorMalo59grigormalogmailcom.jpg" media-type="image/jpeg"/>
+		<item id="fL02" href="OEBPS/images/Gorz_9781781680384_epub_L02_r1GrigorMalogrig3275ormalogmailcom.jpg" media-type="image/jpeg"/>
+		<item id="fcvt" href="OEBPS/images/Gorz_9781781680384_epub_cvt_r1GrigorMalogri6569gormalogmailcom.png" media-type="image/png"/>
+		<item id="ftp" href="OEBPS/images/Gorz_9781781680384_epub_tp_r1GrigorMalogrigormalog8721mailcom.jpg" media-type="image/jpeg"/>
+		<item id="page" href="OEBPS/page-templateGrigorMalogrigo2454rmalogmailcom.xpgt" media-type="application/vnd.adobe-page-template+xml"/>
+		<item id="font1" href="OEBPS/fonts/Ashbury-BoldGr8169igorMalogrigormalogmailcom.otf" media-type="application/x-font-otf"/>
+		<item id="font2" href="OEBPS/fonts/Ashbury-BoldItalicGrigorMalogrigorm3071alogmailcom.otf" media-type="application/x-font-otf"/>
+		<item id="font3" href="OEBPS/fonts/Ashbury-ExtraLightGrigorMal1944ogrigormalogmailcom.otf" media-type="application/x-font-otf"/>
+		<item id="font4" href="OEBPS/fonts/Ashbury-ExtraLightItalicGrigorMalogrigormalo3344gmailcom.otf" media-type="application/x-font-otf"/>
+		<item id="font9" href="OEBPS/fonts/Ashbury-ItalicGrigorMalogrigor5853malogmailcom.otf" media-type="application/x-font-otf"/>
+		<item id="font10" href="OEBPS/fonts/Ashbury-LightGrigorMa4243logrigormalogmailcom.otf" media-type="application/x-font-otf"/>
+		<item id="font15" href="OEBPS/fonts/Ashbury-LightItalicGr7133igorMalogrigormalogmailcom.otf" media-type="application/x-font-otf"/>
+		<item id="font16" href="OEBPS/fonts/Ashbury-MediumGrigorMalogrigormalogmail580com.otf" media-type="application/x-font-otf"/>
+		<item id="font17" href="OEBPS/fonts/Ashbury-MediumItalicGrigorMalogrigormal714ogmailcom.otf" media-type="application/x-font-otf"/>
+		<item id="font18" href="OEBPS/fonts/Ashbury-RegularGrigorMa989logrigormalogmailcom.otf" media-type="application/x-font-otf"/>
+		<item id="font19" href="OEBPS/fonts/CenturySchoolbookFS-BoldGrig6730orMalogrigormalogmailcom.otf" media-type="application/x-font-otf"/>
+		<item id="font20" href="OEBPS/fonts/CenturySchoolbookFS-BoldItalicGri6396gorMalogrigormalogmailcom.otf" media-type="application/x-font-otf"/>
+		<item id="font21" href="OEBPS/fonts/CenturySchoolbookFS-Italic6045GrigorMalogrigormalogmailcom.otf" media-type="application/x-font-otf"/>
+		<item id="font22" href="OEBPS/fonts/CenturySchoolbookFS-RegularGrigorMal7640ogrigormalogmailcom.otf" media-type="application/x-font-otf"/>
+		<item id="font23" href="OEBPS/fonts/FreeSerifGrigorMalogri8278gormalogmailcom.otf" media-type="application/x-font-otf"/>
+		<item id="font24" href="OEBPS/fonts/FreeSerifBold5566GrigorMalogrigormalogmailcom.otf" media-type="application/x-font-otf"/>
+		<item id="font25" href="OEBPS/fonts/FreeSerifBoldItalicGrigorMalogrigorma6162logmailcom.otf" media-type="application/x-font-otf"/>
+		<item id="font27" href="OEBPS/fonts/FreeSerifItalicGrigorMalogrigormalogmail9585com.otf" media-type="application/x-font-otf"/>
+	<item id="exlibris" href="OEBPS/exlibrisGrigorMalogrigormalogma5910ilcom.png" media-type="image/png"/><item id="exlibrispage" href="OEBPS/exlibrisGrigorMa3888logrigormalogmailcom.xhtml" media-type="application/xhtml+xml"/><item id="BooXtream" href="disclaimerGrigo5684rMalogrigormalogmailcom.xhtml" media-type="application/xhtml+xml"/></manifest>
+	<spine toc="ncx">
+		<itemref idref="cvi" linear="yes"/>
+		<itemref idref="exlibrispage"/><itemref idref="tp" linear="yes"/>
+		<itemref idref="cop" linear="yes"/>
+		<itemref idref="toc" linear="yes"/>
+		<itemref idref="prf" linear="yes"/>
+		<itemref idref="c01" linear="yes"/>
+		<itemref idref="c02" linear="yes"/>
+		<itemref idref="c03" linear="yes"/>
+		<itemref idref="c04" linear="yes"/>
+		<itemref idref="c05" linear="yes"/>
+		<itemref idref="c06" linear="yes"/>
+		<itemref idref="c07" linear="yes"/>
+		<itemref idref="c08" linear="yes"/>
+		<itemref idref="c09" linear="yes"/>
+		<itemref idref="aft" linear="yes"/>
+		<itemref idref="ind" linear="yes"/>
+		<itemref idref="bm2" linear="yes"/>
+	<itemref idref="BooXtream"/></spine>
+	<guide>
+		<reference type="start" title="Start" href="OEBPS/Gorz_9781781680384_epub_c01_r1GrigorMalogrigormalogmailc4936om.htm"/>
+		<reference type="toc" title="Table of Contents" href="OEBPS/Gorz_9781781680384_epub_toc_r1GrigorMalogrigormalogmail1863com.htm"/>
+		<reference type="cover" title="Cover" href="OEBPS/Gorz_9781781680384_epub_cvi_r1GrigorMalogrigorma5225logmailcom.htm"/>
+		<reference type="copyright-page" title="Copyright" href="OEBPS/Gorz_9781781680384_epub_cop_r1Grigor4904Malogrigormalogmailcom.htm"/>
+	</guide>
+</package>
