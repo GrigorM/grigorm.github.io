@@ -204,7 +204,7 @@ data.lezhë = {};
 data.lezhë.mandate = 7;
 data.lezhë.rezultate = llogaritDeputetet(lezhe, data.lezhë.mandate);
 data.tiranë = {};
-data.tiranë.mandate = 34;
+data.tiranë.mandate = 36;
 data.tiranë.rezultate = llogaritDeputetet(tirane, data.tiranë.mandate);
 data.durrës = {};
 data.durrës.mandate = 14;
@@ -225,7 +225,7 @@ data.korçë = {};
 data.korçë.mandate = 11;
 data.korçë.rezultate = llogaritDeputetet(korce, data.korçë.mandate);
 data.gjirokastër = {};
-data.gjirokastër.mandate = 5;
+data.gjirokastër.mandate = 4;
 data.gjirokastër.rezultate = llogaritDeputetet(gjirokaster, data.gjirokastër.mandate);
 
 for( var city in data ){
